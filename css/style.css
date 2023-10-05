@@ -5,14 +5,6 @@ header{
     background-color:floralwhite;
 }
 
-.imagedefond { 
-  
-    background-image: url("../img/background.jpg");
-    background-color: grey
-   
-  }
-  
-
 .droite{
     margin-left: auto;
     padding-right: 3%;
@@ -33,12 +25,12 @@ header{
 body{
     padding-top: 10%;
     background-color: #faebd7;
-}
-
-#fond{
-    background-color: antiquewhite;
-    padding-right: 50%;
-    margin-left: 50%;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 
 /*A propos*/
@@ -66,6 +58,11 @@ body{
 
 #ap{
     font-weight: 100;
+    background-color: floralwhite;
+    text-align:left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2%;
+    width: 60%;
 }
 
 .col2{
