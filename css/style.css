@@ -5,6 +5,14 @@ header{
     background-color:floralwhite;
 }
 
+.imagedefond { 
+  
+    background-image: url("../img/background.jpg");
+    background-color: grey
+   
+  }
+  
+
 .droite{
     margin-left: auto;
     padding-right: 3%;
@@ -46,7 +54,7 @@ body{
 
 .imgmoi{
     border-radius: 50%;
-    width:50%; 
+    width:70%; 
 }
 
 .col1{
