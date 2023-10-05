@@ -101,6 +101,11 @@ body{
     color:rgb(41, 40, 38);
 }
 
+.colcvActivites{
+    padding: 1%;
+    background-color: #dac7ad;
+}
+
 .colcv{
     padding: 1%;
     background-color: floralwhite;
