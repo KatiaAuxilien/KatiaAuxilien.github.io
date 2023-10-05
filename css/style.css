@@ -1,0 +1,241 @@
+/*Test*/
+
+    /*Entête*/
+header{
+    background-color:floralwhite;
+}
+
+.droite{
+    margin-left: auto;
+    padding-right: 3%;
+}
+
+.espace{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:floralwhite;
+}
+
+.gauche{
+    padding-left:3%;
+}
+
+    /*Base*/
+
+body{
+    padding-top: 10%;
+    background-color: #faebd7;
+}
+
+#fond{
+    background-color: antiquewhite;
+    padding-right: 50%;
+    margin-left: 50%;
+}
+
+/*A propos*/
+
+.tableau{
+    margin: auto;
+    border-style: solid;
+    border: 2px;
+    border-color: black;
+    background-color:floralwhite;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.imgmoi{
+    border-radius: 50%;
+    width:50%; 
+}
+
+.col1{
+    background-color: rgb(246, 234, 219);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2%;
+}
+
+#ap{
+    font-weight: 100;
+}
+
+.col2{
+    background-color: floralwhite;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2%;
+    width: 60%;
+}
+
+
+/*CV*/
+.tabcv1{
+    margin: auto;
+    width: 45%;
+    margin-bottom: 2%;
+}
+
+.tabcv2{
+    margin: auto;
+    border-style: solid;
+    border: 2px;
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width: 45%;
+    margin-bottom: 3%;
+}
+
+.spacetab{
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+#downloadcv{
+    background-color:#dac7ad;
+    color:rgb(41, 40, 38);
+}
+
+.colcv{
+    padding: 1%;
+    background-color: floralwhite;
+}
+
+.colcv1{
+    text-align: left;
+    padding: 2%;
+}
+
+.colcv2{
+    text-align: right;
+    padding: 2%;
+}
+
+.colcv3{
+    text-align: center;
+    padding: 2%;
+}
+
+.titre{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font:xx-large;
+}
+
+.minititre{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size:larger;
+}
+
+.duree{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    color: blue;
+}
+
+.intitule{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:medium;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.description{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-size:medium; */
+    /* text-align:center; */
+    /* width: 57%; */
+}
+
+.entete{
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size:medium;
+    text-align:left;
+}
+
+.comp{
+    text-align:center;
+}
+
+/**/
+
+:root {
+    --success: #00b894;
+    --progress: #e17055;
+  }
+  
+.progressbar-wrapper {
+    background-color: #dfe6e9;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.progressbar {
+    background-color: var(--progress);
+    color: white;
+    padding: 1rem;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.progressbar[title="downloading"] {
+    background-color: var(--progress);
+}
+
+.progressbar[title="downloaded"] {
+    background-color: var(--success);
+}
+    
+.mp4 {
+    width: 100%;
+}
+
+.mp3 {
+    width: 60%;
+}
+
+
+/*Projets*/
+
+.projd{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:medium;
+    text-align:center;
+}
+
+.projt{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    color: blue;
+}
+
+/*Contact*/
+
+.colcontacticon{
+    text-align: center;
+    width: 5%;
+    padding: 2%;
+}
+/* 
+.colcontact1{
+    background-color: floralwhite;
+    text-align: center;
+    width: 10%;
+    padding: 2%;
+} */
+
+.colcontact2{
+    background-color: floralwhite;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1%;
+    font-size: larger;
+}
+
+.tablcont{
+    margin-bottom: 3%;
+}
