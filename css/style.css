@@ -30,8 +30,12 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-   
 }
+
+.bg{
+    background-color: #faebd7;
+}
+
 
 /*A propos*/
 
@@ -41,7 +45,7 @@ body{
     border: 2px;
     border-color: black;
     background-color:floralwhite;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.555) 0px 10px 36px 0px, rgba(0, 0, 0, 0.185) 0px 0px 0px 1px;
 }
 
 .imgmoi{
@@ -97,13 +101,13 @@ body{
 }
 
 #downloadcv{
-    background-color:#dac7ad;
+    background-color:#faebd7;;
     color:rgb(41, 40, 38);
 }
 
 .colcvActivites{
     padding: 1%;
-    background-color: #dac7ad;
+    background-color: #faebd7;;
 }
 
 .colcv{
@@ -131,6 +135,13 @@ body{
     font-weight: bolder;
     font:xx-large;
 }
+/* 
+.titretransparent {
+    background-color: #faebd7;
+    color: #fff;
+    text-decoration: none;
+    padding: 5em 7em;
+  } */
 
 .minititre{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
