@@ -135,13 +135,13 @@ body{
     font-weight: bolder;
     font:xx-large;
 }
-/* 
+
 .titretransparent {
     background-color: #faebd7;
     color: #fff;
     text-decoration: none;
     padding: 5em 7em;
-  } */
+  }
 
 .minititre{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -259,4 +259,10 @@ body{
 
 .tablcont{
     margin-bottom: 3%;
+}
+
+#portfolioCarousel {
+    margin: auto;
+    height: 400px;
+    width: 700px;
 }
