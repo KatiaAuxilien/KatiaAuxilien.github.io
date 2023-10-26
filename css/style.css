@@ -1,8 +1,7 @@
 /*Test*/
 
     /*Entête*/
-.navColor{
-
+nav{
     background: rgb(209,96,37);
     background: linear-gradient(90deg, rgba(209,96,37,1) 4%, rgba(218,110,43,1) 10%, rgba(244,208,171,1) 32%, rgba(244,210,174,1) 44%, rgba(245,214,179,1) 54%, rgba(250,235,215,1) 84%, rgba(253,247,239,1) 99%); 
 }
