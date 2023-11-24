@@ -1,79 +1,59 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Katia Auxilien</title>
-        <link rel="icon" type="image/png" href="img/monlogo.png" />
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <!-- <link rel="shortcut icon" href="images/logo.png" /> -->
-        <link href="css/style.css" rel="stylesheet" media="all" type="text/css">
-    </head>
-
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Portfolio</title>
+            <link rel="icon" href="/ressources/img/iconeAK.png"/>
+            <link href="ressources/css/style.css" rel="stylesheet" />
+        </head>
     <body>
-        <header id="header">
-            <!-- <img id="banniere" src="images/medicale-banniere.jpg" alt="banniere medicale"> -->
-            <p>
-                    <!-- Image and text -->
-                <nav class="espace navbar fixed-top navbar-expand-lg">
-                    <!-- bg-light  -->
-                    <a class="navbar-brand gauche" href="#">
-                        <img src="img/monlogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                        Katia Auxilien
-                    </a>
-                    <div>/ Etudiante</div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav droite">
-                            <a class="nav-item nav-link active" href="index.html">A propos de moi<span class="sr-only"></span></a>
-                            <a class="nav-item nav-link " href="CV.html">CV</a>
-                            <a class="nav-item nav-link" href="projets.html">Portfolio</a>
-                            <a class="nav-item nav-link" href="contact.html">Contact</a>
-                            <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
-                        </div>
-                    </div>
-                </nav>
-            </p>
+        <header>
+            <nav class="navbar">
+                <a href="#" class="logo">Auxilien Katia</a>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="index.html"><div class='title'>A propos</div></a>
+                        </li>
+                        <li>
+                            <a href="CV.html"><div class='title'>CV</div></a>
+                        </li>
+                            <a href="projets.html"><div class='title'>Portfolio</div></a>
+                        <li>
+                            <a href="contact.html"><div class='title'>Contact</div></a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
+            </nav>
         </header>
+        <script>
+            const menuHamburger = document.querySelector(".menu-hamburger")
+            const navLinks = document.querySelector(".nav-links")
 
-            <div class=".container">
-                <table class="tableau">
-                    <colgroup>
-                        <col width="500">
-                        <col width="300">
-                    </colgroup>
-                    <tr>
-                        <th rowspan="2" class="col1"><img class="imgmoi" src="img/katiaauxilien.jpg"/></th>
-                        <th rowspan ="1" class="col2"><h3>Etudiante en informatique</h3></td>
-                    </tr>
-                    <tr>
-                        
-                        <td rowspan ="1"  class="col2"><h6>"En informatique, chaque problème est une énigme à résoudre."</h6></td>
-                    </tr>
-                    <tr>
-                        <td  rowspan ="1" class="col1"><h3>Auxilien Katia</h3></td>
-                        <td  rowspan ="2" id="ap">
-                <p>Après l'obtention d'un Brevet de Technicien Supérieur en Audiovisuel en 2021, j'ai effectué une année de service civique durant laquelle j'ai entamé 
-                une réorientation. Attirée par la technologie, et ayant étudié en surface des notions d'informatique durant mon BTS audiovisuel, m'orienter en informatique 
-                m'a semblé évident.</p>
-                <p>Actuellement, en deuxième année de BUT informatique, je suis à la recherche d'un stage afin de compléter ma formation et mettre en pratique les compétences
-                que j'ai acquises. J'ai pour projet de poursuivre mes études dans le domaine de la cybersécurité ou en développement web. </p>
-                <p>De ce fait, je suis à la recherche d'un poste de stagiaire en cybersécurité, mais un stage en développement web m'intéresserait tout autant au vu des 
-                compétences de base acquises durant ma formation.</p>
-                        </td>
-                    </tr>
+            menuHamburger.addEventListener('click',()=>{
+                navLinks.classList.toggle('mobile-menu')
+            })
+        </script>
+        <main>
 
-                </table>
-            </div> 
-        
-            <footer id="footer">
-                <h5 id="footerh5">Pieds de page.</h5>
-            </footer>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>Site de portfolio dévelopé par Katia AUXILIEN.</p>
+            </div>
+            <ul class="socials">
+                <li><a href=""><img src="" alt="Github"/></a></li>
+                <li><a href=""><img src="" alt="LinkedIn"/></a></li>
+                <li><a href=""><img src="" alt=""/></a></li>
 
-        </body>
+            </ul>
+            <div class="footer-bottom">
+                <p>Crédits</p>
+                <p>Icône ... de ... <span><a href="">nom</a></span></p>
+            </div>
+        </footer>
+    </body>
 </html>
+
