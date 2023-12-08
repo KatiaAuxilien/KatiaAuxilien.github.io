@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odothea - Transports</title>
+    <link rel="stylesheet" href="../ressources/zoom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .modal-content {
+            background-color: rgba(240, 240, 240, 0);
+        }
+        a {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-light" data-bs-theme="light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-target="#pauseModalToggle" data-bs-toggle="modal">Pause </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+    <script src="../scripts/konami.js"></script>
+    <script>
+        const easterEgg = new Konami("easterEgg.html")
+    </script>
+    <div class="modal fade" id="pauseModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+         tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0" id="4" style="background:linear-gradient(to bottom,#b597db,#726cb4)">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5" id="pauseModalToggleLable">Pause Menu</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <button class="btn btn-primary border-0" data-bs-target="#" data-bs-toggle="modal"
+                                style="background-color: white; color: sienna; font-weight: bold">Continuer
+                        </button>
+                    </div>
+                    <div class="modal-content">
+                        <button class="btn btn-primary border-0" data-bs-target="#parametreModalToggle"
+                                data-bs-toggle="modal"
+                                style="background-color: white; color: sienna; font-weight: bold">Options
+                        </button>
+                    </div>
+                    <a href="index.html"><div class="modal-content">
+                        <button class="btn btn-primary border-0" data-bs-target="#" data-bs-toggle="modal"
+                                style="background-color: white; color: sienna; font-weight: bold">Page accueil
+                        </button>
+                    </div></a>
+                </div>
+                <div class="modal-footer border-0">
+                    <button class="btn btn-primary border-0" data-bs-target="#pause2ModalToggle" data-bs-toggle="modal"
+                            style="background-color: white; color: sienna; font-weight: bold">Page suivante
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="parametreModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+         tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="3" style="background:linear-gradient(to bottom,#b597db,#726cb4)">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5" id="parametreModalToggleLabel">ParamÃ¨tres</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body justify-content-between d-flex flex-column align-items-center justify-content-center">
+                    <div class="form-check form-switch d-flex justify-content-between" style="width:10rem">
+                        <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+                        <label class="form-check-label" for="darkModeSwitch">Dark Mode</label>
+                    </div>
+                    <div class="form-check d-flex justify-content-between" style="width:10rem">
+                        <input class="form-check-input" type="checkbox" value="" id="protanopia">
+                        <label class="form-check-label" for="protanopia">
+                            Protanopie
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-between" style="width:10rem">
+                        <input class="form-check-input" type="checkbox" value="" id="deuteranopia">
+                        <label class="form-check-label" for="deuteranopia">
+                            Deuteranopie
+                        </label>
+                    </div>
+                    <div class="form-check d-flex justify-content-between" style="width:10rem">
+                        <input class="form-check-input" type="checkbox" value="" id="noir et blanc">
+                        <label class="form-check-label" for="noir et blanc">
+                            Noir et blanc
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button class="btn btn-primary border-0" data-bs-target="#pauseModalToggle" data-bs-toggle="modal"
+                            style="background-color: white; color: sienna; font-weight: bold">Retour
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="pause2ModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+         tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="1" style="background:linear-gradient(to bottom,#b597db,#726cb4)">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5" id="pause2ModalToggleLable">Pause Menu</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <button class="btn btn-primary border-0" data-bs-target="#nousModalToggle" data-bs-toggle="modal"
+                                style="background-color: white; color: sienna; font-weight: bold">A propos de nous !
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button class="btn btn-primary border-0" data-bs-target="#pauseModalToggle" data-bs-toggle="modal"
+                            style="background-color: white; color: sienna; font-weight: bold">Retour
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="nousModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+         tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="2" style="background:linear-gradient(to bottom,#b597db,#726cb4)">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5" id="nousModalToggleLable">Pause Menu</h1>
+                    <button type="button" class="btn-close" data-bs-target="#pause2ModalToggle" data-bs-toggle="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    WEB WANDERERS !!!
+                </div>
+                <div class="modal-footer border-0">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <div class="modal-body text-white fs-5">
+                    <div id="myDiv"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="container-fluid p-0 m-0">
+    <div class="background-image">
+        <div class="row position-relative">
+            <img src="../ressources/images/background-sky.png" alt="Desert dystopian" style="max-height:80vh; width:100vw;" class="bgimg"/>
+            <div class="foreground container-fluid p-0 m-0">
+                <div class="col-md-7 position-absolute bottom-0 d-flex justify-content-end">
+                    <div class="mid-background">
+                        <img data-bs-toggle="modal" href="#exampleModalToggle" onclick="affichageText('1.1.0')" src="../ressources/images/plane.png" alt="Avion" class="position-relative end-5 bgimg">
+                    </div>
+                </div>
+                <div class="col-md-8 position-absolute bottom-0 d-flex justify-content-end">
+                    <div class="mid-background">
+                        <img  data-bs-toggle="modal" href="#exampleModalToggle" onclick="affichageText('1.3.0')" src="../ressources/images/voiture.png" alt="voiture" class="position-relative end-5 bgimg">
+                    </div>
+                </div>
+                <div class="col-md-5 position-absolute bottom-0 d-flex justify-content-end">
+                    <div class="mid-background">
+                        <img data-bs-toggle="modal" href="#exampleModalToggle" onclick="affichageText('1.2.0')"  src="../ressources/images/velo.png" alt="velo" class="position-relative end-5 bgimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row position-relative">
+            <img src="../ressources/images/background-floor.png" alt="Desert dystopian" class="bgimg"/>
+            <img src="../ressources/images/screen.png" alt="Ecran" class="position-absolute bottom-0 screen m-0 p-0 bgimg">
+        </div>
+    </div>
+</div>
+<script src="../scripts/storyLogics.js"></script>
+<script src="../scripts/darkMode.js"></script>
+<script src="https://unpkg.com/color-blind"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</body>
+</html>

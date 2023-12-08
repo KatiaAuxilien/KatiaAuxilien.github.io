@@ -1,0 +1,87 @@
+:root {
+    --nav-height: 735px;
+}
+
+.zoom-in {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transform-origin: center center;
+}
+
+#backgroundSky {
+    max-height: 80dvh;
+}
+
+.zoomed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    transform: translate(-50%, -125%) scale(1.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100dvw;
+    overflow: hidden;
+}
+
+section {
+    transition: height 3s ease;
+}
+
+.active {
+    height: 100dvh;
+    background-color: grey;
+    display: block;
+}
+
+section:not(.active) {
+    display: none;
+}
+
+.background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.background-image {
+    max-height: 60dvh;
+    margin-top: 35px;
+    max-width: 100dvw;
+    object-fit: cover;
+    position: absolute;
+}
+
+.mid-background {
+    z-index: 5;
+    position: relative;
+}
+
+.screen {
+    z-index: 10;
+}
+.foreground {
+    z-index: 1;
+}
+
+.parallax img {
+    position: absolute;
+}
+
+.navbar {
+    height: 35px;
+}
+
+#poster {
+    transform: rotate(90deg);
+    display: none;
+    width: 12rem;
+    left: 40%;
+    bottom: 90%;
+}
