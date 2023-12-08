@@ -3,31 +3,34 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Portfolio</title>
-            <link rel="icon" href="/ressources/img/logoKA.png"/>
+            <title>Auxilien Katia</title>
+            <link rel="icon" href="ressources/img/logoKA.png" />
             <link href="ressources/css/style.css" rel="stylesheet" />
+            <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
         </head>
     <body>
         <header>
             <nav class="navbar">
-                <a href="#" class="logo">Auxilien Katia</a>
+                <a href="#" class="logo">AUXILIEN Katia</a>
                 <div class="nav-links">
                     <ul>
                         <li>
-                            <a href="index.html"><div class='title'>A propos</div></a>
+                            <a href="index.html"><div class='title'>A PROPOS</div></a>
                         </li>
                         <li>
                             <a href="CV.html"><div class='title'>CV</div></a>
                         </li>
-                            <a href="projets.html"><div class='title'>Portfolio</div></a>
+                            <a href="projets.html"><div class='title'>PORTFOLIO</div></a>
                         <li>
-                            <a href="contact.html"><div class='title'>Contact</div></a>
+                            <a href="contact.html"><div class='title'>CONTACT</div></a>
                         </li>
                     </ul>
                 </div>
                 <img src="ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
             </nav>
         </header>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
         <script>
             const menuHamburger = document.querySelector(".menu-hamburger")
             const navLinks = document.querySelector(".nav-links")
@@ -35,24 +38,66 @@
             menuHamburger.addEventListener('click',()=>{
                 navLinks.classList.toggle('mobile-menu')
             })
+
+            
+            document.addEventListener("DOMContentLoaded", function() {
+                affichageText('intro', 'J aime les pates.');
+            });
+
+
+            function initTypewriter(selector, delay, text) {
+                new Typewriter(selector, {})
+                    .changeDelay(delay)
+                    .typeString(text)
+                    .start();
+            }
+            
+            function affichageText(id,text) {
+                const div = document.getElementById(id);
+                div.innerHTML = ''; // Vide le contenu actuel du div
+
+                var span = document.createElement('span');
+                span.id = 'typewriterText';
+                div.appendChild(span);
+
+                initTypewriter('#' + span.id, 50, text);
+            }
         </script>
         <main>
-
-            <!-- https://developer.mozilla.org/fr/docs/Web/CSS/CSS_grid_layout -->
+            <div class="container">
+                <div class="grid-container">
+                    <div class="grid-item" style="border-right: solid 1.5px #000000;
+                    ;">
+                        <img class="imgmoi" src="ressources/img/katiaauxilien.jpg"/>
+                        <p  class="quote">Etudiante en informatique</p>
+                    </div>
+                    <div class="grid-item grid-item2">
+                        <p class="quote"><q id="intro"></q></p>
+                        <div id="presentation">
+                            <p>Après l'obtention d'un Brevet de Technicien Supérieur en Audiovisuel en 2021, j'ai effectué une année de service civique durant laquelle j'ai entamé 
+                                une réorientation. Attirée par la technologie, et ayant étudié en surface des notions d'informatique durant mon BTS audiovisuel, m'orienter en informatique 
+                                m'a semblé évident.</p>
+                                <p>Actuellement, en deuxième année de BUT informatique, je suis à la recherche d'un stage afin de compléter ma formation et mettre en pratique les compétences
+                                que j'ai acquises. J'ai pour projet de poursuivre mes études dans le domaine de la cybersécurité ou en développement web. </p>
+                                <p>De ce fait, je suis à la recherche d'un poste de stagiaire en cybersécurité, mais un stage en développement web m'intéresserait tout autant au vu des 
+                                compétences de base acquises durant ma formation.</p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
         </main>
         <footer>
             <div class="footer-content">
-                <p>Site de portfolio dévelopé par Katia AUXILIEN.</p>
+                <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
             </div>
             <ul class="socials">
-                <li><a href=""><img src="" alt="Github"/></a></li>
-                <li><a href=""><img src="" alt="LinkedIn"/></a></li>
+                <li><a href="https://github.com/KatiaAuxilien"><img src="ressources/img/github.png" alt="Github"/></a></li>
+                <li><a href="https://www.linkedin.com/in/katia-auxilien/"><img src="ressources/img/linkedin.svg" alt="LinkedIn"/></a></li>
                 <li><a href=""><img src="" alt=""/></a></li>
-
             </ul>
             <div class="footer-bottom">
                 <p>Crédits</p>
-                <p>Icône ... de ... <span><a href="">nom</a></span></p>
+                <p>Logo de <span><a href="https://www.linkedin.com/in/hermel-heux-0b64461a8/">Hermel Heux</a></span>.</p>
             </div>
         </footer>
     </body>
