@@ -15,7 +15,7 @@
                 <div class="nav-links">
                     <ul>
                         <li>
-                            <a href="index.html"><div class='title'>A PROPOS</div></a>
+                            <a href="index.html"><div class='title active'>A PROPOS</div></a>
                         </li>
                         <li>
                             <a href="CV.html"><div class='title'>CV</div></a>
@@ -41,7 +41,7 @@
 
             
             document.addEventListener("DOMContentLoaded", function() {
-                affichageText('intro', 'J aime les pates.');
+                affichageText('intro', 'Trouver une citation.');
             });
 
 
@@ -64,30 +64,32 @@
             }
         </script>
         <main>
-            <div class="container">
-                <div class="grid-container">
-                    <div class="grid-item" style="border-right: solid 1.5px #000000;
-                    ;">
-                        <img class="imgmoi" src="ressources/img/katiaauxilien.jpg"/>
-                        <p  class="quote">Etudiante en informatique</p>
+            <div class="index_container">
+                <div class="index_item index_item1">
+                    <img class="imgmoi" src="ressources/img/katiaauxilien.jpg"/>
+                    <h3  class="quote" style="font-weight:lighter;">Etudiante en informatique</h3>
+                </div>
+                <div class="index_item index_item2">
+                    <p class="quote"><q id="intro"></q></p>
+                    <div id="presentation">
+                        <p>Après l'obtention d'un Brevet de Technicien Supérieur en Audiovisuel en 2021, j'ai effectué une année de service civique durant laquelle j'ai entamé 
+                            une réorientation. Attirée par la technologie, et ayant étudié en surface des notions d'informatique durant mon BTS audiovisuel, m'orienter en informatique 
+                            m'a semblé évident.</p>
+                            <p>Actuellement, en deuxième année de BUT informatique, je suis à la recherche d'un stage afin de compléter ma formation et mettre en pratique les compétences
+                            que j'ai acquises. J'ai pour projet de poursuivre mes études dans le domaine de la cybersécurité ou en développement web. </p>
+                            <p>De ce fait, je suis à la recherche d'un poste de stagiaire en cybersécurité, mais un stage en développement web m'intéresserait tout autant au vu des 
+                            compétences de base acquises durant ma formation.</p>
                     </div>
-                    <div class="grid-item grid-item2">
-                        <p class="quote"><q id="intro"></q></p>
-                        <div id="presentation">
-                            <p>Après l'obtention d'un Brevet de Technicien Supérieur en Audiovisuel en 2021, j'ai effectué une année de service civique durant laquelle j'ai entamé 
-                                une réorientation. Attirée par la technologie, et ayant étudié en surface des notions d'informatique durant mon BTS audiovisuel, m'orienter en informatique 
-                                m'a semblé évident.</p>
-                                <p>Actuellement, en deuxième année de BUT informatique, je suis à la recherche d'un stage afin de compléter ma formation et mettre en pratique les compétences
-                                que j'ai acquises. J'ai pour projet de poursuivre mes études dans le domaine de la cybersécurité ou en développement web. </p>
-                                <p>De ce fait, je suis à la recherche d'un poste de stagiaire en cybersécurité, mais un stage en développement web m'intéresserait tout autant au vu des 
-                                compétences de base acquises durant ma formation.</p>
-                        </div>
-                    </div>
-                  </div>
-            </div>
+                </div>
+                </div>
         </main>
         <footer>
             <div class="footer-content">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="darkModeToggle" class="toggle-input">
+                    <span class="toggle-slider round"></span>
+                </label> 
+                      
                 <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
             </div>
             <ul class="socials">
@@ -101,5 +103,17 @@
             </div>
         </footer>
     </body>
-</html>
+    <script>
+        
+        const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
 
+            darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode'); // Active le mode sombre
+            } else {
+                body.classList.remove('dark-mode'); // Désactive le mode sombre
+            }
+            });
+    </script>
+</html>
