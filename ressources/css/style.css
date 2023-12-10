@@ -1,0 +1,349 @@
+* {
+    font-family: 'Tenor Sans';
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+
+
+
+/*------------------- Navbar*/
+
+    .navbar{
+        border-bottom: solid 1.5px #000000;
+        position: sticky;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    /* .navbar a{
+        color: #000000;
+    } */
+    .navbar .logo{
+        font-size: 1.5em;
+    }
+    .navbar .nav-links ul{
+        display: flex;
+    }
+    .navbar .nav-links ul li{
+        margin: 0 25px;
+        list-style: none;
+    }
+
+    .active{
+        font-weight: bolder;
+        color: #8b8b8b;
+    }
+    .navbar .menu-hamburger{
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        width: 35px;
+    }
+    .nav-links img {
+        width: 15px;
+        height: 15px;
+    }
+
+    @media all and (max-width: 900px){
+        .navbar {
+            /* background: #f5f5f5; */
+            border-bottom: solid 1.5px #000000;
+        }
+        .navbar .menu-hamburger{
+            display: block;
+            width: 25px;
+            height: 25px;
+            top: 40px;
+            right: 50px;
+        }
+        .navbar .logo{
+            top: 50px;
+            left: 50px;
+            font-size: 2em;
+        }
+        .nav-links{
+            top: 0;
+            left: 0;
+            position: fixed;
+            /* background: #f5f5f5; */
+            backdrop-filter: blur(7px);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100%;
+            transition: all 0.5s ease;
+        }
+        .nav-links img {
+            width: 20px;
+            height: 20px;
+            align-content: center;
+        }
+        .nav-links.mobile-menu{
+            margin-left: 0;
+        }
+        .nav-links ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar .nav-links ul li {
+            margin: 12px 0;
+            font-size: 1.1em;
+        }
+        .navbar .title{
+            display: block;
+        }
+    }
+
+/* bouton */
+/* Styles pour le bouton toggle switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+  background-color: #000000;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(26px);
+}
+
+
+/*------------------- Footer*/
+
+footer{
+    height: auto;
+    width: 100vw;
+}
+
+@media all and (max-width: 900px){
+    footer{
+        position: inherit;
+    }
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 0.8em;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+.socials a img{
+    height: 15px;
+    width: 15px;
+}
+.footer-bottom{
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 0.6em;
+    word-spacing: 2px;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+/* Contenu */
+
+    /*index*/
+        .index_container {
+            background: inherit;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding: 20px;
+        }
+        .index_item {
+            background: inherit;
+            padding: 20px;
+        }
+        .index_container .index_item1 {
+            flex : 1 1 0;
+            border-right: solid 1.5px #000000;
+            text-align: center;
+        }
+            
+        @media all and (max-width: 477px){
+            .index_container .index_item1{
+                border-right: none;
+                border-bottom: solid 1.5px #000000;
+            }
+        }
+
+        .index_container .index_item2 {
+            flex : 3 1 0;
+        }
+        .quote{
+            line-height : 300%;
+            text-align: center;
+        }
+        #presentation{
+            line-height : 150%;
+
+        }
+        .imgmoi{
+            border-radius: 50%; 
+            width:200px;
+        }
+
+
+    /*CV*/
+
+    /*Experiences*/
+
+        .cv{
+            text-align: center;
+        }
+
+        .cv_title{
+            margin-inline: 20%;
+            display: flex;
+            padding: 25px;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+            font-size: 20px;
+            border-bottom: solid 1px black
+        }
+
+        .cv_title .text{
+            padding: 10px;
+            /* flex : 1 1 0; */
+        }
+        .cv_container {
+            background: inherit;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding: 20px;
+            align-items: center;
+        }
+        .cv_item {
+            background: inherit;
+            padding: 20px;
+        }
+        .cv_container .cv_item1 {
+            flex : 2 1 0;
+            border-right: solid 1.5px #000000;
+            text-align: center;
+        }
+            
+        @media all and (max-width: 477px){
+            .cv_container .cv_item1{
+                border-right: none;
+                border-bottom: solid 1.5px #000000;
+            }
+        }
+
+        .cv_container .cv_item2 {
+            flex : 2 1 0;
+            padding: 30px;
+        }
+
+        .cv_formations{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 20px;
+            align-items:center;
+            gap: 20px;
+        }
+        .cv_formations .cv_formation{
+            width: 60%;
+            line-height: 25px;
+        }
+
+
+/* Styles pour le mode sombre */
+.dark-mode {
+    background-color: #1a1a1a; /* Couleur de fond en mode sombre */
+    color: #ffffff; /* Couleur de texte en mode sombre */
+}
+
+/* Modifier les bordures en blanc en mode sombre */
+.dark-mode .navbar {
+    border-bottom: solid 1.5px #ffffff;
+}
+
+.dark-mode .cv_title {
+    border-bottom: solid 1.5px #ffffff;
+}
+.dark-mode .cv_item1 {
+    border-right: solid 1.5px #ffffff;
+}
+
+/* Modifier la couleur des SVG en blanc en mode sombre */
+.dark-mode img {
+    filter: brightness(0) invert(1);
+}
+
