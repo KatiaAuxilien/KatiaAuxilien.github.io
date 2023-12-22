@@ -214,6 +214,38 @@ footer{
     font-weight: 200;
 }
 
+/* Styles pour le mode sombre */
+.dark-mode {
+    background-color: #1a1a1a; /* Couleur de fond en mode sombre */
+    color: #ffffff; /* Couleur de texte en mode sombre */
+}
+
+/* Modifier les bordures en blanc en mode sombre */
+.dark-mode .navbar {
+    border-bottom: solid 1.5px #ffffff;
+}
+
+.dark-mode .cv_title {
+    border-bottom: solid 1.5px #ffffff;
+}
+.dark-mode .cv_item1 {
+    border-right: solid 1.5px #ffffff;
+}
+
+/* Modifier la couleur des SVG en blanc en mode sombre */
+.dark-mode img {
+    filter: brightness(0) invert(1);
+}
+
+
+.bouton{
+    /* background-color: #f5f5f5; */
+    border-radius: 10%;
+    border-style: solid 1px;
+    background-image: linear-gradient(135deg, rgb(248, 242, 235) 0%, rgb(238, 227, 215) 100%);
+
+}
+
 /* Contenu */
 
     /*index*/
@@ -323,27 +355,29 @@ footer{
             line-height: 25px;
         }
 
+        
 
-/* Styles pour le mode sombre */
-.dark-mode {
-    background-color: #1a1a1a; /* Couleur de fond en mode sombre */
-    color: #ffffff; /* Couleur de texte en mode sombre */
-}
+    /* Projets */
+        .projet_illustration{
+            width: 600px;
+        }
+                    
+        @media all and (max-width: 477px){
+            .projet_illustration{
+                width: 250px;
 
-/* Modifier les bordures en blanc en mode sombre */
-.dark-mode .navbar {
-    border-bottom: solid 1.5px #ffffff;
-}
+            }
+        }
 
-.dark-mode .cv_title {
-    border-bottom: solid 1.5px #ffffff;
-}
-.dark-mode .cv_item1 {
-    border-right: solid 1.5px #ffffff;
-}
+        .projet_container{
+            background: inherit;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+        }
+        .projet_item{
 
-/* Modifier la couleur des SVG en blanc en mode sombre */
-.dark-mode img {
-    filter: brightness(0) invert(1);
-}
+        }
 
