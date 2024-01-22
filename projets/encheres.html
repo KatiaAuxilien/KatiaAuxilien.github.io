@@ -22,7 +22,12 @@
                         <li>
                             <a href="../CV.html"><div class='title'>CV</div></a>
                         </li>
+                        <li>
                             <a href="../projets.html"><div class='title active'>PORTFOLIO</div></a>
+                        </li>
+                        <li>
+                            <a href="../certifications.html"><div class='title'>CERTIFICATIONS</div></a>
+                        </li>
                         <li>
                             <a href="../contact.html"><div class='title'>CONTACT</div></a>
                         </li>
@@ -52,7 +57,75 @@
                 <br>Elements appris : En java : La manipulation des sockets, SSL, cryptographie asymétrique, signatures.
                 <br>Difficultés rencontrées : .
 
-            
+               <h1> Applications d'enchères sécurisées développées pour un projet d'études </h1>
+               <h2>Première partie</h2>
+
+                <p>
+                    Il s'agit d'un projet d'étude du troisième semestre réalisé dans le cadre du BUT Informatique.
+                    En équipe de cinq étudiants, nous avons créé les applications d'enchères sécurisées, que nous avons nommé "SecureWin", entre le 23 septembre 2023 et le 
+                    12 janvier 2024 en parallèle des cours.
+                </p>
+                <p>
+                    Nous étions dans une mise en situation professionnelle avec un client fictif, un professeur responsable de notre parcours. Nous avons travaillé avec la méthodologie agile SCRUM, ainsi le projet était découpé en quatre sprints. 
+                    L'équipe était composée de cinq développeurs, dont deux étudiants jouant les rôles de Scrum Master et Product Owner : Paul JACQUEMIN, Yûki SALA-MOCHIZUKI (Scrum Master), Rémi VACHALDE, Loan TREMOULET-BRETON, et moi-même (Product Owner).
+                </p>
+                <p>
+                    Nous avons développé en java des applications d'enchères sécurisées à pli fermé s'appuyant sur le système d'enchères de William Vickrey.
+                    À chaque début de sprint, nous prenions en compte les nouvelles attentes du client pour le sprint.
+                    Nous réalisions des Stands up meetings (mêlée quotidienne) réguliers (trois réunions par semaine) organisés par le Scrum Master, Yûki SALA-MOCHIZUKI. Ces réunions ont permis une meilleure communication et suivi durant tout le projet.
+                    À chaque fin de sprint, nous faisions une présentation de ce qui a été réalisé durant cette période et nous effectuions une réunion de bilan nommée “Sprint review”, au cours de laquelle nous faisions une rétrospective sur les points négatifs, positifs et sur comment s’améliorer pour la suite.
+                </p>
+                Trois applications :
+                <ul>
+                    <li>SecureWin : Manager (dédié aux employés de confiance de l'entreprise)</li>
+                    <li>SecureWin : Bidder (dédiée aux enchérisseurs)</li>
+                    <li>SecureWin : Seller (dédiée aux vendeurs qui sont à l'origine de la création de leur enchère)</li>
+                </ul>
+               
+                Les points les plus importants de ces applications sont :
+                <ul>
+                    <li><h5>Échanges réseau sécurisé.</h5>
+                        Nous avons intégré des sockets sécurisés à nos applications.
+                    </li>
+                    <li><h5>Authentification des utilisateurs.</h5>
+                        Nous avons donc mis en place des signatures cryptographiques, via l'algorithme RSA combiné à l'AES256, propres à chaque utilisateur. Ainsi, les échanges étaient signés et vérifiés par l'application pour assurer l'authenticité des échanges.
+                    </li>
+                    <li><h5>Confidentialité des prix proposés par les enchérisseurs.</h5>
+                        Ainsi, nous y avons intégré du chiffrement (via RSA et AES256), un enchérisseur reçoit la clé publique de l'autorité de gestion et chiffre son prix avec cette clé. L'enchérisseur transmet ce chiffré au vendeur, le vendeur fera un mélange des chiffrés pour assurer l'anonymat des enchérisseurs auprès de l'autorité de gestion. Une fois que le Manager reçoit les chiffrés, il les déchiffre et transmet le gagnant au vendeur qui transmet les résultats aux enchérisseurs.
+                    </li>
+                    <li><h5>Persistance des signatures.</h5>
+                        Nous avons intégré une persistance des signatures via des fichiers .jks et .ces permettant aux utilisateurs de garder leur clé secrète et publique de signature pour les prochaines enchères.
+                    </li>
+                    <li><h5>Interface simple d'utilisation.</h5></li>
+                </ul>
+
+                <h3>Mes missions</h3>
+
+                <p>
+                    En tant que développeuse, ma mission principale était de développer avec mon équipe.
+                </p>
+                <p>
+                    En tant que product owner durant le projet, mes missions secondaires étaient d'alimenter le product backlog, créer les User Story, organiser les plannings poker (pour associer les points d’efforts des User Story), rédiger les tests d’acceptation, communiquer avec le client, et organiser les réunions avec lui.
+                </p>
+ 
+
+                <p>
+                    Ci-dessous une vidéo démonstration des applications, avec uniquement un enchérisseur participant, mais cela fonctionne aussi avec d'autres enchérisseurs sur d'autres postes.
+                </p>
+                <p>
+                    <video controls  width="1000">
+                        <source src="../ressources/video/SecureWin.mp4" type="video/mp4" />
+                    </video>
+                </p>
+
+
+                <h2>Deuxième partie</h2>
+
+                <h2>Conclusion</h2>
+                Le projet SecureWin a été une expérience enrichissante qui a contribué significativement à l'élargissement de mes compétences dans divers domaines. 
+
+                N'hésitez pas à <a href="../contact.html">me contacter</a> si vous avez des questions, des suggestions ou souhaitez échanger sur ce projet.
+
         </main>
         <footer>
             <div class="footer-content">
