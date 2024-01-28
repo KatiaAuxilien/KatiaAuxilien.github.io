@@ -312,7 +312,18 @@ footer{
             flex-direction: row;
             padding: 20px;
             align-items: center;
-            padding-inline: 353px;
+            padding-inline: 197px;
+        }
+        @media all and (max-width: 500px){
+            .cv_container {
+                background: inherit;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                padding: 20px;
+                align-items: center;
+                padding-inline: 115px;
+            }
         }
         @media all and (max-width: 477px){
             .cv_container {
@@ -322,7 +333,7 @@ footer{
                 flex-direction: row;
                 padding: 20px;
                 align-items: center;
-                padding-inline: 0px;
+                padding-inline: 70px;
             }
         }
 
@@ -334,7 +345,6 @@ footer{
             flex : 2 1 0;
             border-right: solid 1.5px #000000;
             text-align: center;
-            /* padding-left: 115px; */
         }
             
         @media all and (max-width: 477px){
@@ -399,6 +409,15 @@ footer{
         .projet_item{
             background: inherit;
             padding: 20px;
+        }
+
+        
+        .projet_title{
+            border-bottom: #000 solid 1px;
+            height: 30px;
+            width: 1800px;
+            padding-inline: 40px;
+
         }
 
 
