@@ -1,2 +1,4 @@
 
 https://fr.w3docs.com/snippets/css/comment-creer-une-glissiere-dimage-ou-un-diaporama.html
+
+<a href="https://www.flaticon.com/free-icons/zoom-in" title="zoom in icons">Zoom in icons created by Freepik - Flaticon</a>
