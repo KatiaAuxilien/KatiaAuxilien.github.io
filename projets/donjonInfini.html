@@ -63,41 +63,47 @@
             <div class="presentation_one">
                 <h3 style="font-style: italic;">Projet d'étude</h3>
             </div>
-            <!-- <div class="presentation_one text">
-                <br>
+            <div class="presentation_one text">
                 <a href="">
-                    <h3>Page github</h3>
+                    <h4>Page github</h4>
                 </a>
-                <br><a>Github</a>
+                <a href="../ressources/Rapport SAé de développement partie 2 Jeu du Donjon Infini.pdf"
+                    download="Rapport SAé de développement partie 2 Jeu du Donjon Infini.pdf">
+                    <img src="../ressources/img/download.svg" width="20px" /> Rapport du projet
+                </a>
+
                 <br>Rôle : Développeuse.
-                <br>Equipe : <a>Nassim El Haddad</a>
-                <br>Outils utilisés : gittea, discord.
-                <br>Durée : de ... à ...
-                <br>Languages : Java.
-                <br>Difficultés rencontrées : .
-            </div> -->
+                <br>Equipe : <a>Nassim El Haddad</a>, Katia Auxilien.
+                <br>Outils utilisés : gittea, discord, starUML.
+            </div>
             <div class="presentation_one text">
                 <p>
                     Il s'agit d'un projet d'étude du deuxième semestre réalisé dans le cadre du BUT Informatique.
-                    En binôme, nous avons développé un jeu type rpg entre le ??? 2023 et le ??? 2023 en parallèle des
+                    En binôme, nous avons développé en java un jeu type rpg du 21 avril 2023 au 23 juin 2023 en parallèle des
                     cours.
                 </p>
                 <p>
                     Ce projet a été réalisé en deux partie. Pour la première partie, nous avions un diagramme de classe fourni par notre professeur responsable du projet (Luc Dartois) 
                     pour développer un jeu fonctionnel. En deuxième partie, nous devions implémenter trois nouvelles fonctionnalités ou plus.
                 </p>
+            </div>            
+            <div class="presentation_one text">
+                <h2> Présentation </h2>
                 <p>
                     Dans notre version du jeu du Donjon Infini, vous incarnez un héros qui aura pour objectif de progresser dans un plateau de dimensions personnalisées, 
                     composé d’une multitude d’éléments que nous avons ajoutés, parmi lesquels de nouveaux monstres, de nouvelles armes, des nouvelles fonctionnalités permettant 
                     d’améliorer l’expérience utilisateur, comme un menu, avec des choix de thèmes, de difficultés et de dimensions, une musique et un meilleur score enregistré 
                     dans les fichiers du jeu. Une javadoc a également été réalisée.
                 </p>
+                <p>
+                    
+                </p>
             </div>
         </div>
 
         <div class="presentation_container2">
             <div class="presentation_one text">
-                <h2> Présentation du sprint 2</h2>
+                <h2>Présentation du jeu</h2>
             </div>
             <div class="presentation_one text">
                 <video controls class="presentation_illustration">
@@ -152,9 +158,20 @@
 
         <div class="presentation_container">
             <div class="presentation_one text">
+                <h3> Problèmes et difficultés rencontrées </h3>
+                <p>               
+                    Diverses exceptions, notamment nullPointerException car DonjonInfini.jeu is null, donc des getter et des setter ont été créé.
+                    Nous avons également placé des exceptions pour la musique dans Musique(), ainsi que pour wait() dans vueCase.
+                    Pour l’effet du gloculaire, nous avons rencontré des difficultés à faire disparaitre et apparaître les éléments créé par VueCase().
+                    De grosses difficultés pour les animations, car nous n’avons pas trouvé comment mettre en “pause” ou en “attente” le programme en attendant que l’animation se termine.
+                </p>
+            </div>
+        </div>
+        <div class="presentation_container">
+            <div class="presentation_one text">
                 <p>
-                    <h5>Crédits</h5>
-                    <h6>Sprites </h6>
+                    <h3> Crédits</h3>
+                    <h5>Sprites </h5>
                     - Dague provenant de l'asset <a class="sourceLien" href="https://yohkgames.itch.io/fantasy-weapons-pt2">"fantasy weapons" par YohkGames</a>
                     <br>- Fond des descriptions, EpeeLegendaire, Hache, Arme, Pieces et Sac d'or provenant de l'asset <a class="sourceLien" href="https://cheekyinkling.itch.io/shikashis-fantasy-icons-pack">"Shikashis fantasy icons pack" par cheekyinkling</a>
                     <br>- Feu de camp de l'asset <a class="sourceLien" href="https://simon-develop.itch.io/2d-campfire-free">"Animated pixel campfire" par SMStudios</a>
@@ -163,7 +180,7 @@
                     <br>- Gloculaire, Gobelin et Squelette provenant de l'asset <a class="sourceLien" href="https://luizmelo.itch.io/monsters-creatures-fantasy">"Monsters creatures fantasy" par LuizMelo</a>
                     <br>- Potion provenant de l'asset <a class="sourceLien" href="https://flippurgatory.itch.io/animated-potion-assets-pack-free?download">"Animated Potion Assets Pack" par Flip</a>
                     <br>- Fond du menu par <a class="sourceLien" href="https://the-outlander.itch.io/free-dungeon-backgrounds ">The Outlander</a>
-                    <h6>Musique </h6>
+                    <h5>Musique </h5>
                     - <a class="sourceLien" href="https://incompetech.com/music/royalty-free/music.html?source=codeur-com-blog&utm_source=codeur-com-blog">Magic Escape Room" : Instruments - Harp, Bassoon, Flutes, Celesta, Percussion, Oboe, Timpani, Cellos, Basses, Xylophone, Glockenspiel, Violins, Violas, French Horns, Trombones, Tuba, Pipe Organ, Clock Tower, Chimes, Church Bell. Artiste - Kevin MacLeod.</a> Téléchargée sur incompetech.com
                     <br><i>Les Sprites ont été créés par différents artistes et sont utilisés conformément à leurs licences. La musique a été composée par Kevin MacLeod et 
                         est disponible en tant que musique libre de droits sur <a class="sourceLien" href="https://incompetech.com/music/royalty-free/music.html?source=codeur-com-blog&utm_source=codeur-com-blog">incompetech.com.</a></i>

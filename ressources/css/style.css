@@ -589,6 +589,23 @@ footer {
     gap: 12px;
 }
 
+
+@media all and (max-width: 430px){
+    .one {
+        background-color: #f5f5f5;
+        border: #000000 solid 1px;
+        width: 280px;
+        height: 70px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+
 .one:hover {
     background-color: #e6e0e0;
 }
