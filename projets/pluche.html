@@ -81,9 +81,14 @@
             <div class="presentation_one text">
                 <p>
                     Il s'agit d'un projet d'étude du troisième semestre réalisé dans le cadre du BUT Informatique.
+                </p>
+                <p>
                     En équipe de trois étudiants, nous avons développé un site de e-commerce (fictif), que nous avons
-                    nommé "Pluche", entre le ??? 2023 et le
-                    ??? 2023 en parallèle des cours.
+                    nommé "Pluche", du 12 octobre 2023 au 24 novembre en parallèle des cours.
+                </p>
+                <p>
+                    L'équipe était composée de trois développeurs : Rémi VACHALDE, Mickael COULON, et moi-même.
+                    Durant ce projet, nous avons utilisé les outils : PHP Storm et phpmyadmin.
                 </p>
             </div>
         </div>
@@ -93,25 +98,25 @@
                     <div class="numbertext">1 / 4</div>
                     <img class="imgSlide" src="../ressources/img/illustrationsProjets/Pluche (1).png"
                         style="width: 100%;" />
-                    <div class="captionSlider">?</div>
+                    <div class="captionSlider"></div>
                 </div>
                 <div class="mySlides">
                     <div class="numbertext">2 / 4</div>
                     <img class="imgSlide" src="../ressources/img/illustrationsProjets/Pluche (2).png"
                         style="width: 100%;" />
-                    <div class="captionSlider">?</div>
+                    <div class="captionSlider"></div>
                 </div>
                 <div class="mySlides">
                     <div class="numbertext">3 / 4</div>
                     <img class="imgSlide" src="../ressources/img/illustrationsProjets/Pluche (3).png"
                         style="width: 100%;" />
-                    <div class="captionSlider">?</div>
+                    <div class="captionSlider"></div>
                 </div>
                 <div class="mySlides ">
                     <div class="numbertext">4 / 4</div>
                     <img class="imgSlide" src="../ressources/img/illustrationsProjets/Pluche (4).png"
                         style="width: 100%;" />
-                    <div class="captionSlider">?</div>
+                    <div class="captionSlider"></div>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -124,6 +129,40 @@
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
+        <div class="presentation_container">
+            <div class="presentation_one text">
+                <p>
+                    Critères que nous devions respecter :
+                <h5>Front-office</h5>
+                - HTML/CSS valide.
+                <br>- Formulaires (create, update ...) : Sécurité (vérification des données (ex : email) côté client &
+                serveur).
+                <br>- Inscription : Par adresse mail et activation du compte par mail.
+                <h5>Back-office</h5>
+                - Un site responsif.
+                <br>- Session : sécurisation toutes les pages pour l'utilisateur et l'admin
+                <br>- CRUD : Create / read/ readall / update / delete
+                <br>- Modèle : Modèle séparé en DataObject & Repository
+                <br>- Modèle générique : Fonctions génériques : récupérer, supprimer, sauvegarder, mettreAJour.
+                <br>- Contrôleur : frontalContrôleur + action par défaut + Gestion des cas d'erreurs (action/contrôleur
+                inexistant)
+                <br>- Architecture MVC : MVC pour chaque contrôleur + vue générique vueGenerale.php
+                <br>- Sécurité : Mot de passe chiffré dans la BD et résistant aux attaques par dictionnaire
+                <br>- Portabilité du site : Chargement automatique des classes & URL relatives
+                <br>- Échappement des vues : échappement URL + HTML
+                <br>- SQL : Requête préparée PDO + Contrainte de clé étrangère
+                <h5>Autre</h5>
+                -Messages Flash
+                <br>- Historique des commandes : table d'association, requête avec jointures, plusieurs produits par
+                commande
+                <br>- Panier courant : Panier dans les cookies/sessions + Panier possible pour un visiteur non identifié
+                <br>- Démo : Impression générale, BDD préparée avec des utilisateurs admin/ pas admin, des produits, des
+                commandes
+                <br>- Utilisation de Git : Messages propres, petits commits réguliers, branche ...
+                </p>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="footer-content">

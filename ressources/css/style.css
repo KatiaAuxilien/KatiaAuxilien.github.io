@@ -563,6 +563,10 @@ footer {
     }
 }
 
+.sourceLien{
+    text-decoration: underline dotted;
+}
+
 /*Contact*/
 .box {
     display: flex;
