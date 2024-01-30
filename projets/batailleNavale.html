@@ -43,9 +43,32 @@
             })
         </script>
         <main>
-            <div class="cv_container">
-                <h1>Bataille navale</h1>
-                <br>
+           
+            <div class="presentation_container">
+                <div class="presentation_one presentation_title">
+                    <h2>Bataille navale</h2>
+                </div>
+                <div class="presentation_one">
+                    <h3 style="font-style: italic;">Projet d'étude</h3>
+                </div>
+                <!-- <div class="presentation_one text">
+                    <br>
+                    <a href="">
+                        <h3>Page github</h3>
+                    </a>
+                    <br><a>...</a>
+                    <br>Rôle : Développeuse.
+                    <br>Equipe : <a>...</a>
+                    <br>Outils utilisés : gittea, discord.
+                    <br>Durée : de ... à ...
+                    <br>Languages : C
+                    <br>Difficultés rencontrées : .
+                </div> -->
+                <div class="presentation_one text">
+                    <p>
+                        ...
+                    </p>
+                </div>
             </div>
             
         </main>
@@ -73,6 +96,37 @@
     </body>
     <script>
         
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+        showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" activeSlide", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " activeSlide";
+    }
+
         const darkModeToggle = document.getElementById('darkModeToggle');
             const body = document.body;
 
