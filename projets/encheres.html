@@ -1,57 +1,69 @@
 <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Auxilien Katia - Projets</title>
-            <link rel="icon" href="../ressources/img/logoKA.png" />
-            <link href="../ressources/css/style.css" rel="stylesheet" />
-            <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
-        </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <a href="#" class="logo">AUXILIEN Katia</a>
-                <div class="nav-links">
-                    <ul>
-                        <li>
-                            <a href="../index.html"><div class='title'>A PROPOS</div></a>
-                        </li>
-                        <li>
-                            <a href="../CV.html"><div class='title'>CV</div></a>
-                        </li>
-                        <li>
-                            <a href="../projets.html"><div class='title active'>PORTFOLIO</div></a>
-                        </li>
-                        <li>
-                            <a href="../certifications.html"><div class='title'>CERTIFICATIONS</div></a>
-                        </li>
-                        <li>
-                            <a href="../contact.html"><div class='title'>CONTACT</div></a>
-                        </li>
-                    </ul>
-                </div>
-                <img src="../ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
-            </nav>
-        </header>
-        <script>
-            const menuHamburger = document.querySelector(".menu-hamburger")
-            const navLinks = document.querySelector(".nav-links")
+<html lang="fr">
 
-            menuHamburger.addEventListener('click',()=>{
-                navLinks.classList.toggle('mobile-menu')
-            })
-        </script>
-        <main>
-            <div class="presentation_container">
-                <div class="presentation_one presentation_title">
-                    <h2>SecureWin : Applications d'enchères sécurisées.</h2>
-                </div>
-                <div class="presentation_one">
-                    <h3 style="font-style: italic;">Projet d'étude</h3>
-                </div>
-            
-                <div class="presentation_one text">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auxilien Katia - Projets</title>
+    <link rel="icon" href="../ressources/img/logoKA.png" />
+    <link href="../ressources/css/style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">AUXILIEN Katia</a>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <div class='title'>A PROPOS</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../CV.html">
+                            <div class='title'>CV</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../projets.html">
+                            <div class='title active'>PORTFOLIO</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../certifications.html">
+                            <div class='title'>CERTIFICATIONS</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">
+                            <div class='title'>CONTACT</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <img src="../ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <main>
+        <div class="presentation_container">
+            <div class="presentation_one presentation_title">
+                <h2>SecureWin : Applications d'enchères sécurisées.</h2>
+            </div>
+            <div class="presentation_one">
+                <h3 style="font-style: italic;">Projet d'étude</h3>
+            </div>
+
+            <!-- <div class="presentation_one text">
                     <br>Rôle : Product Owner.
                     <br>Equipe : <a>Paul JACQUEMIN</a>, <a>Loan TREMOULET-LEBRETON</a>, <a>Yûki SALAMOCHIZUKI</a>, <a>Rémi VACHALDE</a>
                     <br>Encadrants : Fabien LAGUILLAUMIE et Antoine CHOLLET
@@ -59,129 +71,219 @@
                     <br>Durée : 4 sprints (octobre 2023 au 8 janvier 2024)
                     <br>Elements appris : En java : La manipulation des sockets, SSL, cryptographie asymétrique, signatures.
                     <br>Difficultés rencontrées : .
-                </div>
+                </div> -->
 
 
-                <div class="presentation_one text">
-                    <h2>Première partie</h2>
-                </div>
-                <div class="presentation_one text">
-                    <p>
-                        Il s'agit d'un projet d'étude du troisième semestre réalisé dans le cadre du BUT Informatique.
-                        En équipe de cinq étudiants, nous avons créé les applications d'enchères sécurisées, que nous avons nommé "SecureWin", entre le 23 septembre 2023 et le 
-                        12 janvier 2024 en parallèle des cours.
-                    </p>
-                    <p>
-                        Nous étions dans une mise en situation professionnelle avec un client fictif, un professeur responsable de notre parcours. Nous avons travaillé avec la méthodologie agile SCRUM, ainsi le projet était découpé en quatre sprints. 
-                        L'équipe était composée de cinq développeurs, dont deux étudiants jouant les rôles de Scrum Master et Product Owner : Paul JACQUEMIN, Yûki SALA-MOCHIZUKI (Scrum Master), Rémi VACHALDE, Loan TREMOULET-BRETON, et moi-même (Product Owner).
-                    </p>
-                    <p>
-                        Nous avons développé en java des applications d'enchères sécurisées à pli fermé s'appuyant sur le système d'enchères de William Vickrey.
-                        À chaque début de sprint, nous prenions en compte les nouvelles attentes du client pour le sprint.
-                        Nous réalisions des Stands up meetings (mêlée quotidienne) réguliers (trois réunions par semaine) organisés par le Scrum Master, Yûki SALA-MOCHIZUKI. Ces réunions ont permis une meilleure communication et suivi durant tout le projet.
-                        À chaque fin de sprint, nous faisions une présentation de ce qui a été réalisé durant cette période et nous effectuions une réunion de bilan nommée “Sprint review”, au cours de laquelle nous faisions une rétrospective sur les points négatifs, positifs et sur comment s’améliorer pour la suite.
-                    </p>
-                </div>
-                 <div class="presentation_one text">
-                    Trois applications :
-                    <br> - SecureWin : Manager (dédié aux employés de confiance de l'entreprise).
-                    <br> - SecureWin : Bidder (dédiée aux enchérisseurs).
-                    <br> - SecureWin : Seller (dédiée aux vendeurs qui sont à l'origine de la création de leur enchère).
-                </div> 
-                <div class="presentation_one text">
-                    Les points les plus importants de ces applications sont : 
-                        <h5>Échanges réseau sécurisé.</h5>
-                            Nous avons intégré des sockets sécurisés à nos applications.
-                        
-                    <h5>Authentification des utilisateurs.</h5>
-                            Nous avons donc mis en place des signatures cryptographiques, via l'algorithme RSA combiné à l'AES256, propres à chaque utilisateur. Ainsi, les échanges étaient signés et vérifiés par l'application pour assurer l'authenticité des échanges.
-                        
-                        <h5>Confidentialité des prix proposés par les enchérisseurs.</h5>
-                            Ainsi, nous y avons intégré du chiffrement (via RSA et AES256), un enchérisseur reçoit la clé publique de l'autorité de gestion et chiffre son prix avec cette clé. L'enchérisseur transmet ce chiffré au vendeur, le vendeur fera un mélange des chiffrés pour assurer l'anonymat des enchérisseurs auprès de l'autorité de gestion. Une fois que le Manager reçoit les chiffrés, il les déchiffre et transmet le gagnant au vendeur qui transmet les résultats aux enchérisseurs.
-                        
-                        <h5>Persistance des signatures.</h5>
-                            Nous avons intégré une persistance des signatures via des fichiers .jks et .ces permettant aux utilisateurs de garder leur clé secrète et publique de signature pour les prochaines enchères.
-                        
-                        <h5>Interface simple d'utilisation.</h5>
-                
-                </div>
-                <div class="presentation_one text">
-                    <p>
-                        En tant que développeuse, ma mission principale était de développer avec mon équipe.
-                    </p>
-                    <p>
-                        En tant que product owner durant le projet, mes missions secondaires étaient d'alimenter le product backlog, créer les User Story, organiser les plannings poker (pour associer les points d’efforts des User Story), rédiger les tests d’acceptation, communiquer avec le client, et organiser les réunions avec lui.
-                    </p>
-     
-    
-                    <p>
-                        Ci-dessous une vidéo démonstration des applications, avec uniquement un enchérisseur participant, mais cela fonctionne aussi avec d'autres enchérisseurs sur d'autres postes.
-                    </p>
-                    </div>
+            <div class="presentation_one text">
+                <h2>Première partie</h2>
             </div>
-                <div class="presentation_container2">
+            <div class="presentation_one text">
+                <p>
+                    Il s'agit d'un projet d'étude du troisième semestre réalisé dans le cadre du BUT Informatique.
+                    En équipe de cinq étudiants, nous avons créé les applications d'enchères sécurisées, que nous avons
+                    nommé "SecureWin", entre le 23 septembre 2023 et le
+                    12 janvier 2024 en parallèle des cours.
+                </p>
+                <p>
+                    Nous étions dans une mise en situation professionnelle avec un client fictif, un professeur
+                    responsable de notre parcours. Nous avons travaillé avec la méthodologie agile SCRUM, ainsi le
+                    projet était découpé en quatre sprints.
+                    L'équipe était composée de cinq développeurs, dont deux étudiants jouant les rôles de Scrum Master
+                    et Product Owner : Paul JACQUEMIN, Yûki SALA-MOCHIZUKI (Scrum Master), Rémi VACHALDE, Loan
+                    TREMOULET-BRETON, et moi-même (Product Owner).
+                </p>
+                <p>
+                    Nous avons développé en java des applications d'enchères sécurisées à pli fermé s'appuyant sur le
+                    système d'enchères de William Vickrey.
+                    À chaque début de sprint, nous prenions en compte les nouvelles attentes du client pour le sprint.
+                    Nous réalisions des Stands up meetings (mêlée quotidienne) réguliers (trois réunions par semaine)
+                    organisés par le Scrum Master, Yûki SALA-MOCHIZUKI. Ces réunions ont permis une meilleure
+                    communication et suivi durant tout le projet.
+                    À chaque fin de sprint, nous faisions une présentation de ce qui a été réalisé durant cette période
+                    et nous effectuions une réunion de bilan nommée “Sprint review”, au cours de laquelle nous faisions
+                    une rétrospective sur les points négatifs, positifs et sur comment s’améliorer pour la suite.
+                </p>
+            </div>
+            <div class="presentation_one text">
+                Trois applications :
+                <br> - SecureWin : Manager (dédié aux employés de confiance de l'entreprise).
+                <br> - SecureWin : Bidder (dédiée aux enchérisseurs).
+                <br> - SecureWin : Seller (dédiée aux vendeurs qui sont à l'origine de la création de leur enchère).
+            </div>
+            <div class="presentation_one text">
+                Les points les plus importants de ces applications sont :
+                <h5>Échanges réseau sécurisé.</h5>
+                Nous avons intégré des sockets sécurisés à nos applications.
 
-                     <div class="presentation_one text">
-                        <video controls  class="presentation_illustration">
-                            <source src="../ressources/video/SecureWin.mp4" type="video/mp4" />
-                        </video>
-                    </div>
-                </div>
-            <div class="presentation_container">
+                <h5>Authentification des utilisateurs.</h5>
+                Nous avons donc mis en place des signatures cryptographiques, via l'algorithme RSA combiné à l'AES256,
+                propres à chaque utilisateur. Ainsi, les échanges étaient signés et vérifiés par l'application pour
+                assurer l'authenticité des échanges.
 
-                <div class="presentation_one text">
-                    <h2>Deuxième partie</h2>
-                </div>
-            </div>
-            <div class="presentation_container2">
-                <div class="presentation_one">
-                    <img src="../ressources/img/illustrationsProjets/building.png"  class="presentation_illustration"/>
-                </div>
-            </div>
-            <div class="presentation_container">
-                <div class="presentation_one text">
-                    <h2>Conclusion</h2>
-                </div>
-                <div class="presentation_one text">
-                    Le projet SecureWin a été une expérience enrichissante qui a contribué significativement à l'élargissement de mes compétences dans divers domaines. 
+                <h5>Confidentialité des prix proposés par les enchérisseurs.</h5>
+                Ainsi, nous y avons intégré du chiffrement (via RSA et AES256), un enchérisseur reçoit la clé publique
+                de l'autorité de gestion et chiffre son prix avec cette clé. L'enchérisseur transmet ce chiffré au
+                vendeur, le vendeur fera un mélange des chiffrés pour assurer l'anonymat des enchérisseurs auprès de
+                l'autorité de gestion. Une fois que le Manager reçoit les chiffrés, il les déchiffre et transmet le
+                gagnant au vendeur qui transmet les résultats aux enchérisseurs.
 
-                    <br>N'hésitez pas à <a href="../contact.html">me contacter</a> si vous avez des questions, des suggestions ou souhaitez échanger sur ce projet.
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="footer-content">
-                
-                <label class="toggle-switch">
-                    <input type="checkbox" id="darkModeToggle" class="toggle-input">
-                    <span class="toggle-slider round"></span>
-                </label> 
-                    
-            
-                <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
-            </div>
-            <ul class="socials">
-                <li><a href="https://github.com/KatiaAuxilien"><img src="ressources/img/github.png" alt="Github"/></a></li>
-                <li><a href="https://www.linkedin.com/in/katia-auxilien/"><img src="ressources/img/linkedin.svg" alt="LinkedIn"/></a></li>
-                <li><a href=""><img src="" alt=""/></a></li>
-            </ul>
-            <div class="footer-bottom">
-                <p>Crédits</p>
-                <p>Logo de <span><a href="https://www.linkedin.com/in/hermel-heux-0b64461a8/">Hermel Heux</a></span>.</p>
-            </div>
-        </footer>
-    </body>
-    <script>
-        
-        const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
+                <h5>Persistance des signatures.</h5>
+                Nous avons intégré une persistance des signatures via des fichiers .jks et .ces permettant aux
+                utilisateurs de garder leur clé secrète et publique de signature pour les prochaines enchères.
 
-            darkModeToggle.addEventListener('change', () => {
-            if (darkModeToggle.checked) {
-                body.classList.add('dark-mode'); // Active le mode sombre
-            } else {
-                body.classList.remove('dark-mode'); // Désactive le mode sombre
-            }
-            });
-    </script>
+                <h5>Interface simple d'utilisation.</h5>
+
+            </div>
+            <div class="presentation_one text">
+                <p>
+                    En tant que développeuse, ma mission principale était de développer avec mon équipe.
+                </p>
+                <p>
+                    En tant que product owner durant le projet, mes missions secondaires étaient d'alimenter le product
+                    backlog, créer les User Story, organiser les plannings poker (pour associer les points d’efforts des
+                    User Story), rédiger les tests d’acceptation, communiquer avec le client, et organiser les réunions
+                    avec lui.
+                </p>
+
+
+                <p>
+                    Ci-dessous une vidéo démonstration des applications, avec uniquement un enchérisseur participant,
+                    mais cela fonctionne aussi avec d'autres enchérisseurs sur d'autres postes.
+                </p>
+            </div>
+        </div>
+
+        <div class="presentation_container2">
+            <div class="presentation_one text">
+                <h2> Présentation du sprint 2</h2>
+            </div>
+            <div class="presentation_one text">
+                <video controls class="presentation_illustration">
+                    <source src="../ressources/diaporama/Sprint 2.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+        <div class="presentation_container2">
+            <div class="presentation_one text">
+                <h2> Présentation du sprint 3</h2>
+            </div>
+            <div class="presentation_one text">
+                <video controls class="presentation_illustration">
+                    <source src="../ressources/diaporama/Sprint 3.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="presentation_container2">
+            <div class="presentation_one text">
+                <h2> Revue finale de première partie</h2>
+            </div>
+            <div class="presentation_one text">
+                <video controls class="presentation_illustration">
+                    <source src="../ressources/diaporama/SecureWin - Revue finale.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="presentation_container2">
+            <div class="presentation_one text">
+                <h2>Démonstration</h2>
+            </div>
+            <div class="presentation_one text">
+                <video controls class="presentation_illustration">
+                    <source src="../ressources/video/SecureWin.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="presentation_container">
+
+            <div class="presentation_one text">
+                <h2>Deuxième partie</h2>
+            </div>
+        </div>
+        <div class="presentation_container2">
+            <div class="presentation_one">
+                <img src="../ressources/img/illustrationsProjets/building.png" class="presentation_illustration" />
+            </div>
+        </div>
+        <div class="presentation_container">
+            <div class="presentation_one text">
+                <h2>Conclusion</h2>
+            </div>
+            <div class="presentation_one text">
+                Le projet SecureWin a été une expérience enrichissante qui a contribué significativement à
+                l'élargissement de mes compétences dans divers domaines.
+
+                <br>N'hésitez pas à <a href="../contact.html">me contacter</a> si vous avez des questions, des
+                suggestions ou souhaitez échanger sur ce projet.
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle" class="toggle-input">
+                <span class="toggle-slider round"></span>
+            </label>
+
+
+            <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
+        </div>
+        <ul class="socials">
+            <li><a href="https://github.com/KatiaAuxilien"><img src="ressources/img/github.png" alt="Github" /></a></li>
+            <li><a href="https://www.linkedin.com/in/katia-auxilien/"><img src="ressources/img/linkedin.svg"
+                        alt="LinkedIn" /></a></li>
+            <li><a href=""><img src="" alt="" /></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>Crédits</p>
+            <p>Logo de <span><a href="https://www.linkedin.com/in/hermel-heux-0b64461a8/">Hermel Heux</a></span>.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+        showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" activeSlide", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " activeSlide";
+    }
+
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
+            body.classList.add('dark-mode'); // Active le mode sombre
+        } else {
+            body.classList.remove('dark-mode'); // Désactive le mode sombre
+        }
+    });
+</script>
+
 </html>

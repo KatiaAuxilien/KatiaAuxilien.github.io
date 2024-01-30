@@ -1,2 +1,2 @@
-https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
 
+https://fr.w3docs.com/snippets/css/comment-creer-une-glissiere-dimage-ou-un-diaporama.html
