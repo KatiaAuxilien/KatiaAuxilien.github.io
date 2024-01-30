@@ -1,124 +1,143 @@
 <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Auxilien Katia</title>
-            <link rel="icon" href="ressources/img/logoKA.png" />
-            <link href="ressources/css/style.css" rel="stylesheet" />
-            <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
-        </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <a href="#" class="logo">AUXILIEN Katia</a>
-                <div class="nav-links">
-                    <ul>
-                        <li>
-                            <a href="index.html"><div class='title active'>A PROPOS</div></a>
-                        </li>
-                        <li>
-                            <a href="CV.html"><div class='title'>CV</div></a>
-                        </li>
-                        <li>
-                            <a href="projets.html"><div class='title'>PORTFOLIO</div></a>
-                        </li>
-                        <li>
-                            <a href="certifications.html"><div class='title'>CERTIFICATIONS</div></a>
-                        </li>
-                        <li>
-                            <a href="contact.html"><div class='title'>CONTACT</div></a>
-                        </li>
-                    </ul>
-                </div>
-                <img src="ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
-            </nav>
-        </header>
-        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
-        <script>
-            const menuHamburger = document.querySelector(".menu-hamburger")
-            const navLinks = document.querySelector(".nav-links")
+<html lang="fr">
 
-            menuHamburger.addEventListener('click',()=>{
-                navLinks.classList.toggle('mobile-menu')
-            })
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auxilien Katia</title>
+    <link rel="icon" href="ressources/img/logoKA.png" />
+    <link href="ressources/css/style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
+</head>
 
-            
-            document.addEventListener("DOMContentLoaded", function() {
-                affichageText('intro', '...');
-            });
-
-
-            function initTypewriter(selector, delay, text) {
-                new Typewriter(selector, {})
-                    .changeDelay(delay)
-                    .typeString(text)
-                    .start();
-            }
-            
-            function affichageText(id,text) {
-                const div = document.getElementById(id);
-                div.innerHTML = ''; // Vide le contenu actuel du div
-
-                var span = document.createElement('span');
-                span.id = 'typewriterText';
-                div.appendChild(span);
-
-                initTypewriter('#' + span.id, 50, text);
-            }
-        </script>
-        <main>
-            <div class="index_container">
-                <div class="index_item index_item1">
-                    <img class="imgmoi" src="ressources/img/AuxilienKatia.jpg"/>
-                    <h3  class="quote" style="font-weight:lighter;">Etudiante en informatique</h3>
-                </div>
-                <div class="index_item index_item2">
-                    <p class="quote"><q id="intro"></q></p>
-                    <div id="presentation">
-                        <p>Après l'obtention d'un Brevet de Technicien Supérieur en Audiovisuel en 2021, j'ai effectué une année de service civique durant laquelle j'ai entamé 
-                            une réorientation. Attirée par la technologie, et ayant étudié en surface des notions d'informatique durant mon BTS audiovisuel, m'orienter en informatique 
-                            m'a semblé évident.</p>
-                            <p>Actuellement, en deuxième année de BUT informatique, je suis à la recherche d'un stage afin de compléter ma formation et mettre en pratique les compétences
-                            que j'ai acquises. J'ai pour projet de poursuivre mes études dans le domaine de la cybersécurité ou en développement web. </p>
-                            <p>De ce fait, je suis à la recherche d'un poste de stagiaire en cybersécurité, mais un stage en développement web m'intéresserait tout autant au vu des 
-                            compétences de base acquises durant ma formation.</p>
-                    </div>
-                </div>
-                </div>
-        </main>
-        <footer>
-            <div class="footer-content">
-                <label class="toggle-switch">
-                    <input type="checkbox" id="darkModeToggle" class="toggle-input">
-                    <span class="toggle-slider round"></span>
-                </label> 
-                      
-                <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">AUXILIEN Katia</a>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <div class='title active'>A PROPOS</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="CV.html">
+                            <div class='title'>CV</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projets.html">
+                            <div class='title'>PORTFOLIO</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="certifications.html">
+                            <div class='title'>CERTIFICATIONS</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <div class='title'>CONTACT</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="socials">
-                <li><a href="https://github.com/KatiaAuxilien"><img src="ressources/img/github.png" alt="Github"/></a></li>
-                <li><a href="https://www.linkedin.com/in/katia-auxilien/"><img src="ressources/img/linkedin.svg" alt="LinkedIn"/></a></li>
-                <li><a href=""><img src="" alt=""/></a></li>
-            </ul>
-            <div class="footer-bottom">
-                <p>Crédits</p>
-                <p>Logo de <span><a href="https://www.linkedin.com/in/hermel-heux-0b64461a8/">Hermel Heux</a></span>.</p>
-            </div>
-        </footer>
-    </body>
+            <img src="ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
     <script>
-        
-        const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
 
-            darkModeToggle.addEventListener('change', () => {
-            if (darkModeToggle.checked) {
-                body.classList.add('dark-mode'); // Active le mode sombre
-            } else {
-                body.classList.remove('dark-mode'); // Désactive le mode sombre
-            }
-            });
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            affichageText('intro', '...');
+        });
+
+
+        function initTypewriter(selector, delay, text) {
+            new Typewriter(selector, {})
+                .changeDelay(delay)
+                .typeString(text)
+                .start();
+        }
+
+        function affichageText(id, text) {
+            const div = document.getElementById(id);
+            div.innerHTML = ''; // Vide le contenu actuel du div
+
+            var span = document.createElement('span');
+            span.id = 'typewriterText';
+            div.appendChild(span);
+
+            initTypewriter('#' + span.id, 50, text);
+        }
     </script>
+    <main>
+        <div class="index_container">
+            <div class="index_item index_item1">
+                <img class="imgmoi" src="ressources/img/AuxilienKatia.jpg" />
+                <h3 class="quote" style="font-weight:lighter;">Etudiante en informatique</h3>
+            </div>
+            <div class="index_item index_item2">
+                <p class="quote"><q id="intro"></q></p>
+                <div id="presentation">
+                    <p>Après l'obtention d'un Brevet de Technicien Supérieur en Audiovisuel en 2021, j'ai effectué une
+                        année de service civique durant laquelle j'ai entamé
+                        une réorientation. Attirée par la technologie, et ayant étudié en surface des notions
+                        d'informatique durant mon BTS audiovisuel, m'orienter en informatique
+                        m'a semblé évident.</p>
+                    <p>Actuellement, en deuxième année de BUT informatique, je suis à la recherche d'un stage afin de
+                        compléter ma formation et mettre en pratique les compétences
+                        que j'ai acquises. J'ai pour projet de poursuivre mes études dans le domaine de la cybersécurité
+                        ou en développement web. </p>
+                    <p>De ce fait, je suis à la recherche d'un poste de stagiaire en cybersécurité, mais un stage en
+                        développement web m'intéresserait tout autant au vu des
+                        compétences de base acquises durant ma formation.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle" class="toggle-input">
+                <span class="toggle-slider round"></span>
+            </label>
+
+            <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
+        </div>
+        <ul class="socials">
+            <li><a href="https://github.com/KatiaAuxilien"><img src="ressources/img/github.png" alt="Github" /></a></li>
+            <li><a href="https://www.linkedin.com/in/katia-auxilien/"><img src="ressources/img/linkedin.svg"
+                        alt="LinkedIn" /></a></li>
+            <li><a href=""><img src="" alt="" /></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>Crédits</p>
+            <p>Logo de <span><a href="https://www.linkedin.com/in/hermel-heux-0b64461a8/">Hermel Heux</a></span>.</p>
+        </div>
+    </footer>
+</body>
+<script>
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
+            body.classList.add('dark-mode'); // Active le mode sombre
+        } else {
+            body.classList.remove('dark-mode'); // Désactive le mode sombre
+        }
+    });
+</script>
+
 </html>

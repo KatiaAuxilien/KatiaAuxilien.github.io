@@ -1,51 +1,69 @@
 <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Auxilien Katia - Projets</title>
-            <link rel="icon" href="../ressources/img/logoKA.png" />
-            <link href="../ressources/css/style.css" rel="stylesheet" />
-            <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
-        </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <a href="#" class="logo">AUXILIEN Katia</a>
-                <div class="nav-links">
-                    <ul>
-                        <li>
-                            <a href="../index.html"><div class='title'>A PROPOS</div></a>
-                        </li>
-                        <li>
-                            <a href="../CV.html"><div class='title'>CV</div></a>
-                        </li>
-                        <li>
-                            <a href="../projets.html"><div class='title active'>PORTFOLIO</div></a>
-                        </li>
-                        <li>
-                            <a href="../certifications.html"><div class='title'>CERTIFICATIONS</div></a>
-                        </li>
-                        <li>
-                            <a href="../contact.html"><div class='title'>CONTACT</div></a>
-                        </li>
-                    </ul>
-                </div>
-                <img src="../ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
-            </nav>
-        </header>
-        <script>
-            const menuHamburger = document.querySelector(".menu-hamburger")
-            const navLinks = document.querySelector(".nav-links")
+<html lang="fr">
 
-            menuHamburger.addEventListener('click',()=>{
-                navLinks.classList.toggle('mobile-menu')
-            })
-        </script>
-        <main>
-            <div class="cv_container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auxilien Katia - Projets</title>
+    <link rel="icon" href="../ressources/img/logoKA.png" />
+    <link href="../ressources/css/style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">AUXILIEN Katia</a>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <div class='title'>A PROPOS</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../CV.html">
+                            <div class='title'>CV</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../projets.html">
+                            <div class='title active'>PORTFOLIO</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../certifications.html">
+                            <div class='title'>CERTIFICATIONS</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">
+                            <div class='title'>CONTACT</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <img src="../ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <main>
+
+        <div class="presentation_container">
+            <div class="presentation_one presentation_title">
                 <h2>Odothea</h2>
             </div>
+            <div class="presentation_one">
+                <h3 style="font-style: italic;">Nuit de l'info 2023</h3>
+            </div>
+            <div class="presentation_one text">
                 <br><a href="https://katiaauxilien.github.io/Odothea.github.io/views/">Visiter</a>
                 <br>Rôle : ...
                 <br>Equipe : <a>...</a>, <a>...</a>, <a>...</a>, <a>...</a>
@@ -54,100 +72,45 @@
                 <br>Durée : ...
                 <br>Elements appris :...
                 <br>Difficultés rencontrées : .
-
-               <h1> ... </h1>
-               <h2>...</h2>
-
-                <p>
-                    ...
-                </p>
-                <p>
-                    ...
-                </p>
-                <p>
-                    ...
-                </p>
-                    ...
-                <ul>
-                    <li>...</li>
-                    <li>...</li>
-                    <li>...</li>
-                </ul>
-               
-                    ...
-                <ul>
-                    <li><h5>...</h5>
-                    </li>
-                    <li><h5>...</h5>
-                    </li>
-                    <li><h5>...</h5>
-                    </li>
-                    <li><h5>...</h5>
-                    </li>
-                    <li><h5>...</h5></li>
-                </ul>
-
-                <h3>Mes missions</h3>
-
-                <p>
-                    ...
-                </p>
-                <p>
-                    ...
-                </p>
- 
-
-                <p>
-                    ...
-                </p>
-                <p>
-                    <video controls  width="1000">
-                        <source src="../ressources/video/...mp4" type="video/mp4" />
-                    </video>
-                </p>
-
-
-                <h2>...</h2>
-
-                <h2>Conclusion</h2>
-                ...
-
-                N'hésitez pas à <a href="../contact.html">me contacter</a> si vous avez des questions, des suggestions ou souhaitez échanger sur ce projet.
-
-        </main>
-        <footer>
-            <div class="footer-content">
-                
-                <label class="toggle-switch">
-                    <input type="checkbox" id="darkModeToggle" class="toggle-input">
-                    <span class="toggle-slider round"></span>
-                </label> 
-                    
-            
-                <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
             </div>
-            <ul class="socials">
-                <li><a href="https://github.com/KatiaAuxilien"><img src="ressources/img/github.png" alt="Github"/></a></li>
-                <li><a href="https://www.linkedin.com/in/katia-auxilien/"><img src="ressources/img/linkedin.svg" alt="LinkedIn"/></a></li>
-                <li><a href=""><img src="" alt=""/></a></li>
-            </ul>
-            <div class="footer-bottom">
-                <p>Crédits</p>
-                <p>Logo de <span><a href="https://www.linkedin.com/in/hermel-heux-0b64461a8/">Hermel Heux</a></span>.</p>
-            </div>
-        </footer>
-    </body>
-    <script>
-        
-        const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
+        </div>
 
-            darkModeToggle.addEventListener('change', () => {
-            if (darkModeToggle.checked) {
-                body.classList.add('dark-mode'); // Active le mode sombre
-            } else {
-                body.classList.remove('dark-mode'); // Désactive le mode sombre
-            }
-            });
-    </script>
+    </main>
+    <footer>
+        <div class="footer-content">
+
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle" class="toggle-input">
+                <span class="toggle-slider round"></span>
+            </label>
+
+
+            <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
+        </div>
+        <ul class="socials">
+            <li><a href="https://github.com/KatiaAuxilien"><img src="ressources/img/github.png" alt="Github" /></a></li>
+            <li><a href="https://www.linkedin.com/in/katia-auxilien/"><img src="ressources/img/linkedin.svg"
+                        alt="LinkedIn" /></a></li>
+            <li><a href=""><img src="" alt="" /></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>Crédits</p>
+            <p>Logo de <span><a href="https://www.linkedin.com/in/hermel-heux-0b64461a8/">Hermel Heux</a></span>.</p>
+        </div>
+    </footer>
+</body>
+<script>
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
+            body.classList.add('dark-mode'); // Active le mode sombre
+        } else {
+            body.classList.remove('dark-mode'); // Désactive le mode sombre
+        }
+    });
+</script>
+
 </html>
