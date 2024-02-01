@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
 </head>
 
-<body>
+<body class="dark-mode">
     <header>
         <nav class="navbar">
             <a href="#" class="logo">AUXILIEN Katia</a>
@@ -180,13 +180,6 @@
     </main>
     <footer>
         <div class="footer-content">
-
-            <label class="toggle-switch">
-                <input type="checkbox" id="darkModeToggle" class="toggle-input">
-                <span class="toggle-slider round"></span>
-            </label>
-
-
             <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
         </div>
         <ul class="socials">
@@ -201,18 +194,4 @@
         </div>
     </footer>
 </body>
-<script>
-
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
-
-    darkModeToggle.addEventListener('change', () => {
-        if (darkModeToggle.checked) {
-            body.classList.add('dark-mode'); // Active le mode sombre
-        } else {
-            body.classList.remove('dark-mode'); // Désactive le mode sombre
-        }
-    });
-</script>
-
 </html>

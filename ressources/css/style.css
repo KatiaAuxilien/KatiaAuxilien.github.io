@@ -237,31 +237,34 @@ footer {
     text-transform: uppercase;
     font-weight: 200;
 }
-
-/* Styles pour le mode sombre */
-.dark-mode {
-    background-color: #1a1a1a;
-    /* Couleur de fond en mode sombre */
-    color: #ffffff;
-    /* Couleur de texte en mode sombre */
+.dark-mode{
+    background-color: inherit;
 }
+@media (prefers-color-scheme: dark) 
+{ 
+    /* Styles pour le mode sombre */
+    .dark-mode {
+        background-color: #1a1a1a;
+        /* Couleur de fond en mode sombre */
+        color: #ffffff;
+        /* Couleur de texte en mode sombre */
+    }
 
-/* Modifier les bordures en blanc en mode sombre */
-.dark-mode .navbar {
-    border-bottom: solid 1.5px #ffffff;
-}
+    /* Modifier les bordures en blanc en mode sombre */
+    .dark-mode .navbar {
+        border-bottom: solid 1.5px #ffffff;
+    }
 
-.dark-mode .cv_title {
-    border-bottom: solid 1.5px #ffffff;
-}
+    .dark-mode .cv_title {
+        border-bottom: solid 1.5px #ffffff;
+    }
 
-.dark-mode .cv_item1 {
-    border-right: solid 1.5px #ffffff;
-}
+    .dark-mode .cv_item1 {
+        border-right: solid 1.5px #ffffff;
+    }
 
-/* Modifier la couleur des SVG en blanc en mode sombre */
-.dark-mode img {
-    filter: brightness(0) invert(1);
+
+
 }
 
 

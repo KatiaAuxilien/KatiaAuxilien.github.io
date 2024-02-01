@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
 </head>
 
-<body>
+<body class="dark-mode">
     <header>
         <nav class="navbar">
             <a href="#" class="logo">AUXILIEN Katia</a>
@@ -140,14 +140,6 @@
 
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
-
-    darkModeToggle.addEventListener('change', () => {
-        if (darkModeToggle.checked) {
-            body.classList.add('dark-mode'); // Active le mode sombre
-        } else {
-            body.classList.remove('dark-mode'); // Désactive le mode sombre
-        }
-    });
 </script>
 
 </html>
