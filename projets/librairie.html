@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auxilien Katia - Projets</title>
+    <link rel="icon" href="../ressources/img/logoKA.png" />
+    <link href="../ressources/css/style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
+</head>
+
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">AUXILIEN Katia</a>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <div class='title'>A PROPOS</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../CV.html">
+                            <div class='title'>CV</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../projets.html">
+                            <div class='title active'>PORTFOLIO</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../certifications.html">
+                            <div class='title'>CERTIFICATIONS</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">
+                            <div class='title'>CONTACT</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <img src="../ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <main>
+        <div class="presentation_container">
+            <div class="presentation_one presentation_title">
+                <h2>LivreEchange.com : Conception d'une base de données.</h2>
+            </div>
+            <div class="presentation_one">
+                <h3 style="font-style: italic;">Projet d'étude</h3>
+            </div>
+
+            <div class="presentation_one text">
+                <br>
+                <h3><a href="https://github.com/KatiaAuxilien/Database_Fictious_Library"><img src="../ressources/img/zoom-in.png" width="20px"/> Visiter le dépôt github</a></h3>
+                <!-- <br> ・ Rôle : Product Owner.
+                <br> ・ Equipe : <a>Flavio DA VEIGA CARVALHO SANCHEZ</a>, Katia AUXILIEN.
+                <br> ・ Encadrants : ???
+                <br> ・ Outils utilisés : Intelliji IDEA, gitlab, star UML, google drive, google docs, discord, zoom, méthode Agile SCRUM.
+                <br> ・ Durée : 4 sprints (octobre 2023 au 8 janvier 2024).
+                <br> ・ Elements appris : En java : La manipulation des sockets, SSL, cryptographie asymétrique, signatures. -->
+            </div> 
+
+            <div class="presentation_one text">
+                <h2>Première partie</h2>
+            </div>
+            <div class="presentation_one text">
+                <p>
+                    Il s'agit d'un projet d'étude du second semestre réalisé dans le cadre du BUT Informatique.
+                    En binôme, , entre le ?? 2023 et le ??? 2023 en parallèle des cours.
+                </p>
+                <p>
+                    Le projet était découpé en trois partie.
+                    Nous étions dans ....
+                </p>
+                <p>
+                    ...
+                </p>
+            </div>
+            <div class="presentation_one text">
+                ...
+            </div>
+            <div class="presentation_one text">
+                Les points les plus importants de ces applications sont :
+                <h5>...</h5>
+                ...
+
+                <h5>...</h5>
+                ...
+
+                <h5>...</h5>
+                ...
+
+            </div>
+            <div class="presentation_one text">
+                <p>
+                    ...
+                </p>
+                <p>
+                    ...
+                </p>
+                <p>
+                    ...
+                </p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle" class="toggle-input">
+                <span class="toggle-slider round"></span>
+            </label>
+
+
+            <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
+        </div>
+        <ul class="socials">
+            <li><a href="https://github.com/KatiaAuxilien"><img src="../ressources/img/github.png" alt="Github" /></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/katia-auxilien/"><img src="../ressources/img/linkedin.svg"
+                        alt="LinkedIn" /></a></li>
+            <li><a href=""><img src="" alt="" /></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>Crédits</p>
+            <p>Logo de <span><a href="https://www.linkedin.com/in/hermel-heux-0b64461a8/">Hermel Heux</a></span>.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+        showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" activeSlide", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " activeSlide";
+    }
+
+</script>
+
+</html>
