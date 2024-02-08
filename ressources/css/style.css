@@ -704,3 +704,30 @@ footer {
         font-size: 11px;
     }
 }
+
+/*Apprentissage*/
+
+.apprentissage_illustration {
+    width: 400px;
+}
+
+@media all and (max-width: 450px) {
+    .apprentissage_illustration {
+        width: 200px;
+
+    }
+}
+
+@media all and (max-width: 700px) and (min-width : 465px) {
+    .apprentissage_illustration {
+        width: 100px;
+
+    }
+}
+
+.apprentissage_title {
+    border-bottom: #000 solid 1px;
+    height: 30px;
+    width: 1800px;
+    padding-inline: 40px;
+}

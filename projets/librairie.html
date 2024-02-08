@@ -77,6 +77,11 @@
             <div class="presentation_one text">
                 <h2>Première partie</h2>
             </div>
+            <div class="presentation_container2">
+                <embed src="../ressources/Part1_Database_Project_Report.pdf" height="850" width="1080" type="application/pdf"
+                    class="presentation_illustration" />
+            </div>
+    
             <div class="presentation_one text">
                 <p>
                     Il s'agit d'un projet d'étude du second semestre réalisé dans le cadre du BUT Informatique.
@@ -91,43 +96,27 @@
                 </p>
             </div>
             <div class="presentation_one text">
-                ...
+                <h2>Deuxième partie</h2>
+            </div>
+            
+            <div class="presentation_container2">
+                <embed src="../ressources/Part2_Database_Project_Report.pdf" height="850" width="1080" type="application/pdf"
+                    class="presentation_illustration" />
             </div>
             <div class="presentation_one text">
-                Les points les plus importants de ces applications sont :
-                <h5>...</h5>
-                ...
-
-                <h5>...</h5>
-                ...
-
-                <h5>...</h5>
-                ...
-
+                <h2>Troisième partie</h2>
             </div>
-            <div class="presentation_one text">
-                <p>
-                    ...
-                </p>
-                <p>
-                    ...
-                </p>
-                <p>
-                    ...
-                </p>
+            <div class="presentation_container2">
+                <embed src="../ressources/Part3_Database_Project_Report.pdf" height="850" width="1080" type="application/pdf"
+                    class="presentation_illustration" />
             </div>
+    
+
         </div>
 
     </main>
     <footer>
         <div class="footer-content">
-
-            <label class="toggle-switch">
-                <input type="checkbox" id="darkModeToggle" class="toggle-input">
-                <span class="toggle-slider round"></span>
-            </label>
-
-
             <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
         </div>
         <ul class="socials">
@@ -143,38 +132,4 @@
         </div>
     </footer>
 </body>
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides((slideIndex += n));
-    }
-
-    function currentSlide(n) {
-        showSlides((slideIndex = n));
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            slideIndex = 1;
-        }
-        if (n < 1) {
-            slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" activeSlide", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " activeSlide";
-    }
-
-</script>
-
 </html>
