@@ -665,7 +665,7 @@ footer {
 /*Apprentissage*/
 
 .apprentissage_illustration {
-    width: 400px;
+    width: 700px;
 }
 
 @media all and (max-width: 450px) {
@@ -697,8 +697,8 @@ footer {
     flex-direction: column;
     isolation: isolate;
     position: relative;
-    width: 18rem;
-    height: 8rem;
+    width: 28rem;
+    height: 14rem;
     background: #29292c;
     border-radius: 1rem;
     overflow: hidden;
@@ -800,4 +800,5 @@ footer {
     flex-direction: row;
     padding: 20px;
     align-items: center;
+    justify-content: space-between;
   }
