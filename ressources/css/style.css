@@ -746,7 +746,7 @@ footer {
   }
   
   .notibody {
-    color: #99999d;
+    color: #f0f0f0;
     padding: 0 1.25rem;
     transition: transform 300ms ease;
     z-index: 5;
