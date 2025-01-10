@@ -2,7 +2,7 @@
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
-    <img alt="License: TODO" src="https://img.shields.io/badge/License-TODO-yellow.svg" />
+    <img alt="License: TODO" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
 
@@ -21,6 +21,11 @@
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2024 Katia Auxilien.
+This project is MIT licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
