@@ -377,6 +377,17 @@ footer {
     background-color: #f1f1f1 !important
 }
 
+@media (prefers-color-scheme: dark) 
+{ 
+.w3-light-grey,
+.w3-hover-light-grey:hover,
+.w3-light-gray,
+.w3-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #1a1a1a !important
+}
+}
+
 .w3-round-small {
     border-radius: 2px
 }
@@ -436,6 +447,7 @@ footer {
 
     }
 }
+
 
 .projet_container {
     background: inherit;
@@ -699,24 +711,24 @@ footer {
     position: relative;
     width: 35rem;
     height: 14rem;
-    background: #29292c;
+    background: #d7d7d7;
     border-radius: 1rem;
     overflow: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
     --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
     --color: #32a6ff
-  }
+}
   
-  .notification:before {
+.notification:before {
     position: absolute;
     content: "";
     inset: 0.0625rem;
     border-radius: 0.9375rem;
-    background: #18181b;
+    background: #e2e2e3; /*DARK*/
     z-index: 2
-  }
-  
+}
+
   .notification:after {
     position: absolute;
     content: "";
@@ -746,7 +758,7 @@ footer {
   }
   
   .notibody {
-    color: #f0f0f0;
+    color: #464646;
     padding: 0 1.25rem;
     transition: transform 300ms ease;
     z-index: 5;
@@ -756,6 +768,43 @@ footer {
     transform: translateX(0.25rem)
   }
   
+
+@media (prefers-color-scheme: dark) 
+{ 
+    .notification {
+        display: flex;
+        flex-direction: column;
+        isolation: isolate;
+        position: relative;
+        width: 35rem;
+        height: 14rem;
+        background: #29292c;
+        border-radius: 1rem;
+        overflow: hidden;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 14px;
+        --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+        --color: #32a6ff
+    }
+  
+    .notification:before {
+        position: absolute;
+        content: "";
+        inset: 0.0625rem;
+        border-radius: 0.9375rem;
+        background: #18181b; /*DARK*/
+        z-index: 2
+    }
+
+    .notibody {
+        color: #f0f0f0;
+        padding: 0 1.25rem;
+        transition: transform 300ms ease;
+        z-index: 5;
+    }
+
+}
+
   .notiglow,
   .notiborderglow {
     position: absolute;

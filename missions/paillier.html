@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auxilien Katia - Stage LIRMM</title>
+    <link rel="icon" href="../ressources/img/logoKA.png" />
+    <link href="../ressources/css/style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
+</head>
+
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">AUXILIEN Katia</a>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <div class='title'>A PROPOS</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../CV.html">
+                            <div class='title active'>CV</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../projets.html">
+                            <div class='title'>PORTFOLIO</div>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="../certifications.html">
+                            <div class='title'>CERTIFICATIONS</div>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="../apprentissage.html">
+                            <div class='title'>APPRENTISSAGE</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">
+                            <div class='title'>CONTACT</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <img src="../ressources/img/menu.png" alt="menu hamburger" title="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <main>
+        <div class="presentation_container">
+            <div class="presentation_one presentation_title">
+                <h2>Stage de deuxième année de BUT Informatique</h2>
+            </div>
+            <div class="presentation_one">
+                <h3 style="font-style: italic;">Avril 2024 à juin 2024</h3>
+            </div>
+<!-- 
+            <div class="presentation_one text">
+                <br>
+        
+                <br> - Rôle : Développeuse
+                <br> - Equipe : <a>William PUECH</a>, <a>Norman HUTTE</a>, <a>Katia AUXILIEN</a>.
+                <br> - Encadrant : William PUECH.
+                <br> - Outils utilisés : Visual Studio Code, langage C++ et Python, Windows Subsystem Linux, Overleaf (LaTex) Github et git. 
+                <br> - Durée : 12 semaines
+                <br> - Elements appris : C++, LaTex.
+                <br> - Difficultés rencontrées : La mise en application de certains outils mathématiques pour mettre en oeuvre le chiffrement par Paillier et AES.
+            </div> 
+-->
+            <div class="presentation_one text">
+                <h2>Contexte de l'entreprise</h2>
+            </div>
+            <div class="presentation_one text">
+
+                <p>
+                    Le Laboratoire d'Informatique, de Robotique et Microélectronique de Montpellier fait partie du CNRS ?
+
+                    <!-- TODO : COMPLETER AVEC MON RAPPORT DE STAGE -->
+                </p>
+            </div>
+
+            <div class="presentation_one text">
+                <h2>Missions réalisées</h2>
+            </div>
+
+            <div class="presentation_one text">
+                <h3>Adaptation du code d'obscuration d'images en .ppm à du .pgm</h3>
+                <p>
+                    La première mission m'a permise de m'habituer à l'environnement, la méthode de travail et à l'équipe. Je devais partir de la base de code d'un collaborateur pour l'adapter afin que ce programme obscurcisse aussi des images au format .pgm.
+                </p>
+
+                <h3>Implémentation et calculs statistiques et métriques d'image sur les différents mode de chiffrement AES sur des images</h3>
+                <p>
+                   Cette deuxième mission avait pour but de m'introduire aux calculs statisques avec python (matplotlib) et à l'implémentation en C++ des méthodes de chiffrement. 
+                </p>
+
+                <h3>Calculs statistique et développement d'une application de chiffrement d'images par cryptosystème de Paillier </h3>
+
+                <p>
+                    Ma troisième mission était l'objectif du stage. Elle consistait à implémenter le cryptosystème de Paillier pour chiffrer des images, puis effectuer des calculs statistiques sur les bits de poids faible afin de diminuer la taille des images en faisant varier les paramètres mathématiques du calcul de chiffrement.
+                </p>
+            </div>
+
+            <div class="presentation_one text">
+                <h2>Méthode de travail</h2>
+            </div>
+            <div class="presentation_one text">
+                <p>
+                    Au sein de mon équipe la méthode de travail était classique. Toutes les semaines nous faisions le point avec mon maître de stage. De plus, tout les vendredi après-midi je rédigeais et rendais un compte-rendu d'activité regroupant les tâches prévues, les tâches terminées (et les résultats obtenus), les tâches en cours, les tâches à faire et pour finir l'activité de la semaine (une réunion avec l'équipe ICAR au complet, etc.).          
+                </p>
+            </div>
+                <div class="presentation_container2">
+                    <embed src="../ressources/Part1_Database_Project_Report.pdf" height="850" width="1080" type="application/pdf"
+                        class="presentation_illustration" />
+                    <!-- TODO : Mettre les documents de suivi de projet -->
+                </div>
+
+            <div class="presentation_one text">
+                <h2>Résultats obtenus</h2>
+            </div>
+            <div class="presentation_one text">
+                
+                <h3>Adaptation du code d'obscuration d'images en .ppm à du .pgm</h3>
+                <p>
+                    Il en a résulté un programme d'obscuration des images au format .pgm (noires et blanches).
+                </p>
+
+                <div class="presentation_container2">
+                    <embed src="../ressources/Part1_Database_Project_Report.pdf" height="850" width="1080" type="application/pdf"
+                        class="presentation_illustration" />
+                    <!-- TODO : Mettre les compte rendu d'activité -->
+                </div>
+
+                <h3>Implémentation et calculs statistiques et métriques d'image sur les différents mode de chiffrement AES sur des images</h3>
+                <p>
+                     Nous avons obtenu un programme pouvant chiffrer des images .pgm en AES par différents modes. A partir de ces images, nous avons pu effectuer des calculs statistiques sur les métriques obtenues grace à un autre programme que j'avais développé.
+                </p>
+                <div class="presentation_container2">
+                    <embed src="../ressources/Part1_Database_Project_Report.pdf" height="850" width="1080" type="application/pdf"
+                        class="presentation_illustration" />
+                    <!-- TODO : Mettre les compte rendu d'activité -->
+                </div>
+
+                <h3>Calculs statistique et développement d'une application de chiffrement d'images par cryptosystème de Paillier </h3>
+                <h4><a href="https://github.com/KatiaAuxilien/code_base_obscuration?tab=readme-ov-file"><img src="../ressources/img/zoom-in.png" width="15px"/> Visiter le Github du projet</a></h4>
+
+                <p> A la fin de mon stage, nous avions un programme de chiffrement d'image .pgm par cryptosystème de Paillier. Nous pouvons le lancer avec divers paramètres : Taille de compression voulue, nombres premiers en entrées, donner en argument un fichier ou un dossier d'images à chiffrer.
+                </p>
+            </div>
+
+            <div class="presentation_container2">
+                <embed src="../ressources/Part1_Database_Project_Report.pdf" height="850" width="1080" type="application/pdf"
+                    class="presentation_illustration" />
+                <!-- TODO : Mettre les compte rendu d'activité -->
+            </div>
+
+            <div class="presentation_one text">
+                <p>
+                    
+
+                </p>
+            </div>
+            
+
+            <div class="presentation_one text">
+                <h2>Compétences acquises</h2>
+            </div>
+            <div class="presentation_one text">
+                <p>
+                    Ce stage m'a permis d'apprendre en autodidacte à développer en C++ et je me suis améliorée en langage Python (matplotlib). Ensuite, j'ai appris à lire un article scientifique et à en rédiger un. De plus, j'ai développé mes compétences en implémentation mathématiques.
+                    J'ai pu m'améliorer en architecture logicielle, diagrammes UML et de classes. J'ai découvert les métriques utilisées pour mesurer des éléments sur des images.
+                </p>
+            </div>
+
+
+            <div class="presentation_container2">
+                <embed src="../ressources/Part1_Database_Project_Report.pdf" height="850" width="1080" type="application/pdf"
+                    class="presentation_illustration" />
+                <!-- TODO : Mettre le rapport de stage -->
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Site portfolio dévelopé par Katia AUXILIEN.</p>
+        </div>
+        <ul class="socials">
+            <li><a href="https://github.com/KatiaAuxilien"><img src="../ressources/img/github.png" alt="Github" /></a></li>
+            <li><a href="https://www.linkedin.com/in/katia-auxilien/"><img src="../ressources/img/linkedin.svg" alt="LinkedIn" /></a></li>
+            <li><a href=""><img src="" alt="" /></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>Crédits</p>
+            <p>Logo de <span><a href="https://www.linkedin.com/in/hermel-heux-0b64461a8/">Hermel Heux</a></span>.</p>
+        </div>
+    </footer>
+</body>
+</html>

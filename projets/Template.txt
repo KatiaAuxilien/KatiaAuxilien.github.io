@@ -1,0 +1,52 @@
+Contexte du projet (commande académique, contraintes dans la réalisation, durée, en équipe ou seul, projet personnel…)
+
+Méthodes de travail et résultats obtenus avec des preuves (GIF, copie d’écran, vidéo de projet…)
+
+Les compétences travaillées au cours de ce projet, soyez le plus précis possible.
+
+Pour les productions en équipe, expliquez clairement votre contribution personnelle.
+
+
+            <div class="presentation_one text">
+                <h2>Contexte du projet</h2>
+            </div>
+            <div class="presentation_one text">
+                <p>
+                    ...
+                </p>
+                <p>
+                    Outils utilisés
+                </p>
+                <p>
+                    Rôle dans l'équipe...
+                </p>
+            </div>
+
+            <div class="presentation_one text">
+                <h2>Méthodes de travail</h2>
+            </div>
+            <div class="presentation_one text">
+                <p>
+                    ...
+                </p>
+            </div>
+
+
+            <div class="presentation_one text">
+                <h2>Résultats obtenus</h2>
+            </div>
+            <div class="presentation_one text">
+                <p>
+                    ...
+                </p>
+            </div>
+
+
+            <div class="presentation_one text">
+                <h2>Compétences travaillées</h2>
+            </div>
+            <div class="presentation_one text">
+                <p>
+                    ...
+                </p>
+            </div>
