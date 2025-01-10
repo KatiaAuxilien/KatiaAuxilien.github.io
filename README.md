@@ -16,7 +16,7 @@
 
 * Website: [KatiaAuxilien.github.io](https://katiaauxilien.github.io/)
 * Github: [@KatiaAuxilien](https://github.com/KatiaAuxilien)
-* LinkedIn: [@TODO](https://www.linkedin.com/in/katia-auxilien/)
+* LinkedIn: [@katia-auxilien](https://www.linkedin.com/in/katia-auxilien/)
 
 ## Show your support
 
