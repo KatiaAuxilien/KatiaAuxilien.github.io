@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> TODO
+>  My portfolio developed for my computer science studies.
 
 ### 🏠 [Homepage](https://github.com/KatiaAuxilien/KatiaAuxilien.github.io?tab=readme-ov-file)
 
