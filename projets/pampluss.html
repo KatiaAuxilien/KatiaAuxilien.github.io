@@ -62,7 +62,7 @@
     <main>
         <div class="presentation_container">
             <div class="presentation_one presentation_title">
-                <h2>???.</h2>
+                <h2>PAMPLUSS 🍋 (Php Apache Mysql Phpmyadmin Linux Ubuntu Secure Setup)</h2>
             </div>
             <div class="presentation_one">
                 <h3 style="font-style: italic;">Projet académique : ???</h3>
@@ -77,34 +77,120 @@
             <div class="presentation_one text">
                 <h2> Contexte du projet </h2>
             </div>
-            <!-- <div class="presentation_one text">
-                <p>Ce projet a été réalisé durant mon stage de recherche de deuxième année de BUT Informatique. Ce travail a été réalisé sur une durée 10 semaines (renseignement sur des articles scientifique, développement, calculs statistiques, caculs des métriques)</p>
-                <p>J'ai travaillé seule sur la majorité du projet. Les bases de code surlesquels je me suis appuyée étaient déjà écrites avant le début de mon stage.</p>
-                <p>Le projet était en C++, j'ai utilisé Github et visual studio code, j'ai compilé sous une WSL. Afin de rédiger mes compte-rendu en LaTex j'ai utilisé Overleaf </p> 
-            </div>-->
+            <div class="presentation_one text">
+                <p>Ce projet a été réalisé dans le cadre d'un travail dirigé de troisième année de BUT Informatique pour cloturer le module "Installation de services complexes". Ce travail a été réalisé sur une durée 4 semaines.</p>
+                <p>J'ai développer ces deux scripts en individuel.</p>
+                <p>Ces scripts sont développés en bash, j'ai utilisé Github et sublime text, pour lancer les tests j'ai utilisé des environnements virtuels Ubuntu sous Virtual Box.</p> 
+            </div>
 
             <div class="presentation_one text">
                 <h2> Méthode de travail </h2>
             </div>
             <div class="presentation_one text">
-                <!--<p> 
-                   Au sein de mon équipe la méthode de travail était classique. Toutes les semaines nous faisions le point avec mon maître de stage. De plus, tout les vendredi après-midi je rédigeais et rendais un compte-rendu d'activité regroupant les tâches prévues, les tâches terminées (et les résultats obtenus), les tâches en cours, les tâches à faire et pour finir l'activité de la semaine (une réunion avec l'équipe ICAR au complet, etc.). 
-                </p>-->
+                <p> 
+                   Ayant été seule sur ce projet, ma méthode de travail était classique. J'avancais toutes les semaines sur ce projet.
+                   De plus, j'utilisais une application de gestion de tâches regroupant les tâches prévues, les tâches terminées, les tâches en cours, les tâches à faire. 
+                </p>
             </div>
-
-            <!-- <div class="presentation_container2">
-                <embed src="../ressources/Part2_Database_Project_Report.pdf" height="400" width="1080" type="application/pdf"
-                    class="presentation_illustration" />
-            </div> -->
-
             <div class="presentation_one text">
                 <h2> Résultats obtenus </h2>
             </div>
+
+            <!-- TODO : -->
+            <div class="presentation_container2">
+                <div class="slideshow-container">
+                    <div class="mySlides ">
+                        <div class="numbertext">1 / 4</div>
+                        <img class="imgSlide" src="../ressources/img/illustrationsProjets/Pluche (1).png"
+                            style="width: 100%;" />
+                        <div class="captionSlider"></div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img class="imgSlide" src="../ressources/img/illustrationsProjets/Pluche (2).png"
+                            style="width: 100%;" />
+                        <div class="captionSlider"></div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img class="imgSlide" src="../ressources/img/illustrationsProjets/Pluche (3).png"
+                            style="width: 100%;" />
+                        <div class="captionSlider"></div>
+                    </div>
+                    <div class="mySlides ">
+                        <div class="numbertext">4 / 4</div>
+                        <img class="imgSlide" src="../ressources/img/illustrationsProjets/Pluche (4).png"
+                            style="width: 100%;" />
+                        <div class="captionSlider"></div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br />
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+            <!-- TODO -->
+            
             <div class="presentation_one text">
-                <!-- <p> A la fin de mon stage, nous avions un programme de chiffrement d'image .pgm par cryptosystème de Paillier. Nous pouvons le lancer avec divers paramètres : Taille de compression voulue, nombres premiers en entrées, donner en argument un fichier ou un dossier d'images à chiffrer.
+                <p> Ce projet de fin de module est composé de quatre scripts :
+                    <ul>
+                        <li>Un script d'installation des services Apache, php, phpmyadmin et mysql sous bare-metal</li>
+                        <li>Un script de désinstallation des services Apache, php, phpmyadmin et mysql sous bare-metal</li>
+                        <li>Un script d'installation des services Apache, php, phpmyadmin et mysql sous docker</li>
+                        <li>Un script de désinstallation des services Apache, php, phpmyadmin et mysql sous docker</li>
+                    </ul>
                 </p>
-                <p>J'ai appris en autonomie à rédiger en LaTex sous Overleaf.</p>
-                <p>De plus, j'ai rédigé la <a href="" style="color: blue;">documentation en anglais de l'intégralité du projet</a> et j'ai créé un <a href="" style="color: blue;">readme pour présenter le projet en anglais sur Github</a>.</p> -->
+                <p>
+                    Les scripts d'installation effectuent aussi la configuration avancée et sécurisée des services dont :
+                    <ul>
+                        <li> Apache :
+                            <ul>
+                                <li>
+                                    Configuration avancée (port personnalisé, nom de domaine, etc.)
+                                </li>
+                                <li>
+                                    Génération des certificats et clé privée afin de configurer du HTTPS.
+                                </li>
+                                <li>
+                                    Installation et configuration du ModSecurity.
+                                </li>
+                                <li>
+                                    Installation et configuration du ModEvasive.
+                                </li>
+                                <li>
+                                    Configuration et création de trois sites : Page d'accueil, siteA et siteB.
+                                </li>
+                                <li>
+                                    Création et configuration d'une page confidentiel (en php) pour les siteA et siteB, affichant une table de données et accessible par des identifiant (.htaccess et .htpasswd). 
+                                </li>
+                            </ul>
+                        </li>
+                        <li> MySQL :
+                            <ul>
+                                <li>
+                                    Configuration avancée (port personnalisé, création d'utilisateur admin, etc.).
+                                </li>
+                                <li>
+                                    Création d'une base de données de base, d'une table et insertion de données d'example.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Php</li>
+                        <li>Phpmyadmin
+                            <ul>
+                                <li>
+                                    ..
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </p>
             </div>
 <!-- todo : liens -->
             <!-- <div class="presentation_container2">
