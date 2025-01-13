@@ -65,62 +65,90 @@
                 <h2>???.</h2>
             </div>
             <div class="presentation_one">
-                <h3 style="font-style: italic;">Projet académique : ???</h3>
+                <h3 style="font-style: italic;">Projet académique : Continuité de service</h3>
             </div>
 
             <div class="presentation_one text">
                 <br>
-                <h3><a href="https://github.com/KatiaAuxilien/"><img src="../ressources/img/zoom-in.png" width="20px"/> Visiter le dépôt github</a></h3>
- <!-- TODO METTRE LE LIEN -->
+                <h3><a href="https://github.com/c-r-lewis/5av-"><img src="../ressources/img/zoom-in.png" width="20px"/> Visiter le dépôt github</a></h3>
             </div> 
 
             <div class="presentation_one text">
                 <h2> Contexte du projet </h2>
             </div>
-            <!-- <div class="presentation_one text">
-                <p>Ce projet a été réalisé durant mon stage de recherche de deuxième année de BUT Informatique. Ce travail a été réalisé sur une durée 10 semaines (renseignement sur des articles scientifique, développement, calculs statistiques, caculs des métriques)</p>
-                <p>J'ai travaillé seule sur la majorité du projet. Les bases de code surlesquels je me suis appuyée étaient déjà écrites avant le début de mon stage.</p>
-                <p>Le projet était en C++, j'ai utilisé Github et visual studio code, j'ai compilé sous une WSL. Afin de rédiger mes compte-rendu en LaTex j'ai utilisé Overleaf </p> 
-            </div>-->
+            <div class="presentation_one text">
+                <p>Ce projet a été réalisé dans le cadre d'un travail dirigé pour cloturer le module de continuité de service en troisième année de BUT Informatique. Ce travail a été réalisé sur du 20 novembre 2024 au 13 janvier 2025. Ce projet est un programme Client/Server en python pour effectuer une sauvegarde externalisée de dossiers et fichiers.</p> <!-- TODO : -->
+                <p>Ce travail a été réalisé par groupe de trois, avec Charlotte LEWIS et Jade RENAUT.</p>
+                <p>Le projet était en python, nous avons utilisé Gitlab et visual studio code.</p> 
+            </div>
 
             <div class="presentation_one text">
                 <h2> Méthode de travail </h2>
             </div>
             <div class="presentation_one text">
-                <!--<p> 
-                   Au sein de mon équipe la méthode de travail était classique. Toutes les semaines nous faisions le point avec mon maître de stage. De plus, tout les vendredi après-midi je rédigeais et rendais un compte-rendu d'activité regroupant les tâches prévues, les tâches terminées (et les résultats obtenus), les tâches en cours, les tâches à faire et pour finir l'activité de la semaine (une réunion avec l'équipe ICAR au complet, etc.). 
-                </p>-->
+                <p> 
+                   Au sein de mon équipe la méthode de travail était classique. Toutes les semaines nous faisions le point. De plus, nous nous organisions sur les tâches à faire via un fichier TODO.md dans le répertoire gitlab dans le quel nous nous assignons les tâches.
+                </p>
+                <p>
+                    J'étais chargée d'implémenter la partie sécurité du programme. De ce fait, j'ai implémenté la sécurisation du flux de données passant par le réseau en implémnetant des sockets sécurisées (SSL) avec la librairie openssl, j'ai aussi développé un script bash afin de générer le certificat et la clé privée du serveur, nécessaire à la communication sécurisée. De plus, j'ai implémenté le chiffrement et déchiffrement AES-256 des sauvegardes côté serveur, avec une génération de la paire de clé pour le chiffrement et déchiffrement.
+                </p>
             </div>
-
-            <!-- <div class="presentation_container2">
-                <embed src="../ressources/Part2_Database_Project_Report.pdf" height="400" width="1080" type="application/pdf"
-                    class="presentation_illustration" />
-            </div> -->
 
             <div class="presentation_one text">
                 <h2> Résultats obtenus </h2>
             </div>
             <div class="presentation_one text">
-                <!-- <p> A la fin de mon stage, nous avions un programme de chiffrement d'image .pgm par cryptosystème de Paillier. Nous pouvons le lancer avec divers paramètres : Taille de compression voulue, nombres premiers en entrées, donner en argument un fichier ou un dossier d'images à chiffrer.
+                <p> 
+                    Nous avons nommé l'application de sauvegarde Client/Server "5av€". Une documentation détaillée a été rédigée 
                 </p>
-                <p>J'ai appris en autonomie à rédiger en LaTex sous Overleaf.</p>
-                <p>De plus, j'ai rédigé la <a href="" style="color: blue;">documentation en anglais de l'intégralité du projet</a> et j'ai créé un <a href="" style="color: blue;">readme pour présenter le projet en anglais sur Github</a>.</p> -->
+    
             </div>
-<!-- todo : liens -->
-            <!-- <div class="presentation_container2">
-                <embed src="../ressources/Part2_Database_Project_Report.pdf" height="400" width="1080" type="application/pdf"
-                    class="presentation_illustration" />
-            </div> -->
+
+
+        <div class="presentation_container2">
+            <div class="slideshow-container">
+                <div class="mySlides ">
+                    <div class="numbertext">1 / 3</div>
+                    <img class="imgSlide" src="../ressources/img/illustrationsProjets/5av€ (1).png"
+                        style="width: 100%;" />
+                    <div class="captionSlider"></div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img class="imgSlide" src="../ressources/img/illustrationsProjets/5av€ (2).png"
+                        style="width: 100%;" />
+                    <div class="captionSlider"></div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img class="imgSlide" src="../ressources/img/illustrationsProjets/5av€ (3).png"
+                        style="width: 100%;" />
+                    <div class="captionSlider"></div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br />
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div class="presentation_container2">
+            <div class="presentation_one text">
+                <video controls class="presentation_illustration">
+                    <source src="../ressources/diaporama/5av.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
 
             <div class="presentation_one text">
                 <h2>Compétences acquises</h2>
             </div>
             <div class="presentation_one text">
-                <!-- <p>
-                    Ce stage m'a permis d'apprendre en autodidacte à développer en C++ et je me suis améliorée en langage Python (matplotlib). Ensuite, j'ai appris à lire un article scientifique et à en rédiger un. De plus, j'ai développé mes compétences en implémentation mathématiques.
-                    J'ai pu m'améliorer en architecture logicielle, diagrammes UML et de classes. J'ai découvert les métriques utilisées pour mesurer des éléments sur des images.
-                    J'ai appris en autonomie à utiliser <a href="" style="color: blue;">Dioxygen</a> pour générer de la <a href="" style="color: blue;">documentation</a>.
-                </p> -->
+                Cette expérience m'a permise de développer mes compétences en python. 
             </div>
         
         </div>
