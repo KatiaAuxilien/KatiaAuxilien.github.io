@@ -1,8 +1,8 @@
-# Code of Conduct for the Battleship Project
+# Code of Conduct for the Portfolio Project
 
 ## Introduction
 
-This document outlines the expectations and rules of conduct for all contributors and users of the Battleship project. By participating in this project, you agree to abide by this code of conduct.
+This document outlines the expectations and rules of conduct for all contributors and users of the Portfolio project. By participating in this project, you agree to abide by this code of conduct.
 
 ## Our Principles
 
@@ -27,7 +27,7 @@ This document outlines the expectations and rules of conduct for all contributor
 
 ## Reporting Incidents
 
-If you witness or are subjected to unacceptable behavior, please report it immediately to the project leaders. You can contact [Katia Auxilien] at [github.fax590@passmail.net] <!-- or [Leader's Name] at [Email Address]. -->
+If you witness or are subjected to unacceptable behavior, please report it immediately to the project leaders. You can contact Katia Auxilien at github.fax590@passmail.net <!-- or [Leader's Name] at [Email Address]. -->
 
 ## Consequences of Violations
 
@@ -43,7 +43,7 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 
 ## Contact
 
-For any questions or concerns regarding this code of conduct, please contact [Katia Auxilien] at [github.fax590@passmail.net] <!-- or [Leader's Name] at [Email Address]. -->
+For any questions or concerns regarding this code of conduct, please contact Katia Auxilien at github.fax590@passmail.net <!-- or [Leader's Name] at [Email Address]. -->
 
 ## License
 
