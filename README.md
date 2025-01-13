@@ -8,6 +8,7 @@
 
 >  My portfolio developed for my computer science studies.
 
+### 🖼️ [Portfolio](https://katiaauxilien.github.io/)
 ### 🏠 [Homepage](https://github.com/KatiaAuxilien/KatiaAuxilien.github.io?tab=readme-ov-file)
 
 ## Author
